@@ -8,7 +8,8 @@
 
 <body>
   <header>
-    <a href="index.html" title="Возвращение на главую страницу сайта."><img src="img/logo_sedona.svg" alt="Лого Седона"></a>
+    <a href="index.html" title="Возвращение на главую страницу сайта."><img src="img/logo_sedona.svg"
+        alt="Лого Седона"></a>
     <nav>
       <ul>
         <li> <a href="#">Информация</a> </li>
@@ -21,8 +22,32 @@
 
   <main>
     <section>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        
+      <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
+          <label for="swimming_pool_id">Бассейн</label>
+          <input type="checkbox" name="parking" id="parking_id">
+          <label for="parking_id">Паркова</label>
+          <input type="checkbox" name="WiFi" id="wi_fi_id">
+          <label for="wi_fi_id">Wi-Fi</label>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" name="hotel" id="hotel_id" checked>
+          <label for="hotel_id">Гостиница</label>
+          <input type="checkbox" name="motel" id="motel_id" checked>
+          <label for="motel_id">Мотель</label>
+          <input type="checkbox" name="apartments" id="apartments_id" checked>
+          <label for="apartments_id">Апартаменты</label>
+        </fieldset>
+        <fieldset>
+          <legend>Стоимость в сутки(Р):</legend>
+          <output name="min_value">0</output>
+          <input type="range" min="0" max="3000" step="1" name="range_value">
+          <output name="max_value">3000</output>
+        </fieldset>
+        <input type="submit" name="show_results" value="Показать">
       </form>
     </section>
     <section>
@@ -115,13 +140,17 @@
 
     <section>
       <ul>
-        <li><a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17" alt="logo_twitter"></a></li>
-        <li><a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22" alt="logo_facebook"></a></li>
-        <li><a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16" alt="logo_youtube"></a></li>
+        <li><a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
+              alt="logo_twitter"></a></li>
+        <li><a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+              alt="logo_facebook"></a></li>
+        <li><a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
+              alt="logo_youtube"></a></li>
       </ul>
     </section>
 
-     <section>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy"> <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a> </section>
+    <section>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy"> <img
+          src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a> </section>
 
   </footer>
 
