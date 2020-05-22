@@ -83,17 +83,29 @@
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в СЕДОНЕ
       </p>
-      <form>
-        <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset>
+          <legend>Поиск гостиницы в Седоне</legend>
+          <label for="sing_in_id">Дата заезда</label>
+          <input type="text" name="sing_in_date" id="sing_in_id" value="24 Апреля 2017">
+          <label for="sing_out_id">Дата выезда</label>
+          <input type="text" name="sing_out_date" id="sing_out_id" value="4 Июля 2017">
+          <label for="old_people_id">Взрослые</label>
+          - <input type="text" name="old_people" id="old_people_id" value="2"> +
+          <label for="children_people_id">Дети</label>
+          - <input type="text" name="children_people" id="children_people_id" value="0"> +
+          <input type="submit" value="Найти" name="button_find">
+        </fieldset>
+       <!-- <a href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         <span>
           Дата заезда:
         </span>
         <img src="img/calendar.svg" width="21" height="23" alt="logo_calendar">  <!--Это декоративное изображение,заменить потом при помощи css-->
-        <span>
+       <!-- <span>
           Дата выезда:
         </span>
         <img src="img/calendar.svg" width="21" height="23" alt="logo_calendar">  <!--Это декоративное изображение,заменить потом при помощи css-->
-        <span>
+       <!-- <span>
           Взрослые:
         </span>
         <span>
