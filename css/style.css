@@ -1,17 +1,158 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
-:root{
-    --basic-white: #FFFFFF;
-    --basic-darker-white: #F2F2F2;
-    --basic-more-darker-whire: #EBEBEB;
-    --basic-blue:  #81B3D2;
-    --basic-darker-blue: #669EC0;
-    --basic-more-darker-blue: #5496BD;
-    --basic-black: #000000;
-    --basic-lighter-black: #333333;
-    --basic-grey: #EEEEEE;
-    --basic-brown: #766357;
-    --basic-darker-brown: #604E43;
-    --basic-more-darker-brown: #503E33;
+
+:root {
+  --basic-white: #FFFFFF;
+  --basic-darker-white: #F2F2F2;
+  --basic-more-darker-whire: #EBEBEB;
+  --basic-blue: #81B3D2;
+  --basic-darker-blue: #669EC0;
+  --basic-more-darker-blue: #5496BD;
+  --basic-black: #000000;
+  --basic-lighter-black: #333333;
+  --basic-grey: #EEEEEE;
+  --basic-brown: #766357;
+  --basic-darker-brown: #604E43;
+  --basic-more-darker-brown: #503E33;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+li{
+    list-style-type: none;
+}
+a { 
+    text-decoration: none; 
+   } 
+/*_____HEADER_____*/
+.header {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+/*_____MAIN_____*/
+.welcome_sedona{
+    background-image: url(../img/main_background.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 509px;  /* тут скорее всего поменять на 100%*/
+    text-align: center; 
+}
+.text__sedona-welcome{
+    font-size: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.text__reasons{    
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-lighter-black);
+}
+.background__reason{
+    background-color: var(--basic-blue);
+}
+.reason__img1{
+    width: 800px;
+    height: 256px;
+    background-image: url(../img/background_photo_1.jpg);
+}
+.reason__img2{
+    width: 800px;
+    height: 256px;
+    background-image: url(../img/background_photo_2.jpg);
+}
+.reason__name-color{
+    color: var(--basic-white);
+}
+.reason__name{
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.reason__text{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.house__img{
+    background-image: url(../img/house.svg);
+    background-repeat: no-repeat;
+    width: 72px;
+    height: 75px;
+}
+.food__img{
+    background-image: url(../img/food.svg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 75px;
+}
+.souvenir__img{
+    background-image: url(../img/box.svg);
+    background-repeat: no-repeat;
+    width: 70px;
+    height: 75px;
+}
+.background__color-item{
+    background-color: var(--basic-grey);
+}
+.befor__form-question{
+    font-size: 30px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;    
+}
+.befor__form-text{
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--basic-lighter-black);
+}
+legend{
+    background-color: var(--basic-brown);
+    text-align: center;
+    color: var(--basic-white);
+}
+.sing__in-date,
+.sing__out-date,
+.button__less,
+.button__more,
+.input__adult,
+.input__children{
+    background-color: var(--basic-darker-white);
+}
+.button__search{
+    background-color: var(--basic-blue);
+    color: var(--basic-white);
+}
+.contacts{
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.social__list-item{
+    background-color: var(--basic-blue);
+}
+.develop__text{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
 }

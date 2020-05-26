@@ -4,139 +4,170 @@
 <head>
   <meta charset="utf-8">
   <title>SEDONA</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <a href="#"><img src="img/logo_sedona.svg" width="138" height="70" alt="logo_sedona"></a>
-    <nav>
-      <ul>
-        <li> <a href="#">Информация</a> </li>
-        <li> <a href="#">Фото и видео</a> </li>
-        <li> <a href="#">Карта штата</a> </li>
-        <li> <a href="hotels.html" title="Переход на страницу Гостиницы.">Гостиницы</a> </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo__link">
+        <img src="img/logo_sedona.svg" width="138" height="70" alt="logo_sedona">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Информация</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Фото и видео</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Карта штата</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="hotels.html" title="Переход на страницу Гостиницы." class="menu__list-link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section>
-      <img src="https://via.placeholder.com/150x100">
-      <p>Седона — небольшой городок в Аризоне,<br>
+    <div class="container">
+      <section class="welcome_sedona">
+        <img src="img/welcome_sedona.svg" title="welcome to the gorgeous. Sedona" class="welcome_sedona-img">
+      </section>
+      <p class="text__sedona-welcome">Седона — небольшой городок в Аризоне,<br>
         заслуживающий большего!</p>
-    </section>
+      <p class="text__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-    <section>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</section>
+      <section class="real__town">
+        <ul class="reasons__list">
+          <li class="reasons__list-item">
+            <div class="background__reason">
+              <h3 class="reason__name reason__name-color">Настойщий городок</h3>
+              <span class="reason__text reason__name-color">-№1-</span>
+              <p class="reason__text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <div class="reason__img1"></div>
+            <ul class="underreasons__list">
+              <li class="reasons__list-item">
+                <div class="house__img"> </div>
+                <!--Это фоновое изображение,заменить потом при помощи css-->
+                <h4 class="reason__name">Жильё</h4>
+                <p class="reason__text"> Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>               
+              </li>
+              <li class="reasons__list-item">
+                <div class="food__img"> </div>
+                <!--Это фоновое изображение,заменить потом при помощи css-->
+                <h4 class="reason__name">Еда</h4>
+                <p class="reason__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+              <li class="reasons__list-item">
+                <div class="souvenir__img"> </div>
+                <!--Это фоновое изображение,заменить потом при помощи css-->
+                <h4 class="reason__name">Сувениры </h4>
+                <p class="reason__text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          </li>
+          <li class="reasons_list-item">
+            <div class="reason__img2"></div>
+            <div class="background__reason">
+              <h3 class="reason__name reason__name-color">Там есть Мост дьявола</h3>
+              <span class="reason__text reason__name-color">-№2-</span>
+              <p class="reason__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+          </li>
+          <div class="background__color-item">
+          <li class="reasons_list-item">
+            <h3 class="reason__name">Небольшая площадь</h3>
+            <span class="reason__text">-№3-</span>
+            <p class="reason__text">все достопримечательности находятся очень близко</p>
+          </li>
+          <li class="reasons_list-item">
+            <h3 class="reason__name">Красивая дорога</h3>
+            <span class="reason__text">-№4-</span>
+            <p class="reason__text">ехать в седону из лас-вегаса совсем не скучно!</p>
+          </li>
+          <li class="reasons_list-item">
+            <h3 class="reason__name">Мало туристов</h3>
+            <span class="reason__text">-№5-</span>
+            <p class="reason__text">большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </div>
+        </ul>
+      </section>
 
-    <section>
-      <ul>
-        <li>
-          <h3>Настойщий городок</h3>
-          <span>№1</span>
-          <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="https://via.placeholder.com/150x100">
-          <ul>
-            <li>
-              <img src="img/house.svg" width="75" height="72" alt="logo_house">
-              <!--Это фоновое изображение,заменить потом при помощи css-->
-              <h4>Жильё </h4>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li>
-              <img src="img/food.svg" width="75" height="70" alt="logo_food">
-              <!--Это фоновое изображение,заменить потом при помощи css-->
-              <h4>Еда</h4>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li>
-              <img src="img/box.svg" width="64" height="77" alt="logo_box">
-              <!--Это фоновое изображение,заменить потом при помощи css-->
-              <h4>Сувениры </h4>
-              <p>Не только китайского, но и местного производства!</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <img src="https://via.placeholder.com/150x100">
-          <h3>Там есть Мост дьявола</h3>
-          <span>№2</span>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        </li>
-        <li>
-          <h3>Небольшая площадь</h3>
-          <span>№3</span>
-          <p>все достопримечательности находятся очень близко</p>
-        </li>
-        <li>
-          <h3>Красивая дорога</h3>
-          <span>№4</span>
-          <p>ехать в седону из лас-вегаса совсем не скучно!</p>
-        </li>
-        <li>
-          <h3>Мало туристов</h3>
-          <span>№5</span>
-          <p>большинство едет в гранд каньон и толпится там</p>
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Заинтересовались?</h2>
-      <p>
-        Укажите предполагаемые даты поездки,<br>
-        и мы покажем вам лучшие предложения гостиниц в СЕДОНЕ
-      </p>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
-        <fieldset>
-          <legend>Поиск гостиницы в Седоне</legend>
-          <label for="sing_in_id">Дата заезда</label>
-          <input type="text" name="sing_in_date" id="sing_in_id" placeholder="24 Апреля 2017">
-          <label for="sing_out_id">Дата выезда</label>
-          <input type="text" name="sing_out_date" id="sing_out_id" placeholder="4 Июля 2017">
-          <label for="old_people_id">Взрослые</label>
-          <button type="button">-</button> <input type="text" name="old_people" id="old_people_id" value="2"> <button
-            type="button">+</button>
-          <!--Тут просто кнопки плюс и минус-->
-          <label for="children_people_id">Дети</label>
-          <button type="button">-</button> <input type="text" name="children_people" id="children_people_id" value="0">
-          <button type="button">+</button>
-          <!--Тут просто кнопки плюс и минус-->
-          <input type="submit" value="Найти" name="button_find">
-        </fieldset>
-      </form>
-    </section>
-    <section>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589732099763!5m2!1sru!2sru"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-    </section>
-
+      <section class="befor__form">
+        <h2 class="befor__form-question">Заинтересовались?</h2>
+        <p class="befor__form-text">
+          Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в СЕДОНЕ
+        </p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <fieldset>
+            <legend>Поиск гостиницы в Седоне</legend>
+            <label for="sing_in_id">Дата заезда</label>
+            <input type="text" name="sing_in_date" id="sing_in_id" placeholder="24 Апреля 2017" class="sing__in-date">
+            <label for="sing_out_id">Дата выезда</label>
+            <input type="text" name="sing_out_date" id="sing_out_id" placeholder="4 Июля 2017" class="sing__out-date">
+            <label for="old_people_id">Взрослые</label>
+            <button type="button" class="button__less">-</button> <input type="text" name="old_people" id="old_people_id" value="2" class="input__adult"> <button
+              type="button" class="button__more">+</button>
+            <!--Тут просто кнопки плюс и минус-->
+            <label for="children_people_id">Дети</label>
+            <button type="button" class="button__less">-</button> <input type="text" name="children_people" id="children_people_id"
+              value="0" class="input__children">
+            <button type="button" class="button__more">+</button>
+            <!--Тут просто кнопки плюс и минус-->
+            <input type="submit" value="Найти" name="button_find" class="button__search">
+          </fieldset>
+        </form>
+      </section>
+      <section>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104770.38018730543!2d-111.86517855273749!3d34.85435832354931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1589732099763!5m2!1sru!2sru"
+          width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <section>
-      #visitSEDONA
-      <a href="tel:+74956660166"> Тел: +7(495)666-01-66</a>
-    </section>
+    <div class="container">
+      <section>
+        <span class="contacts">#visitSEDONA</span>
+        <div class="contacts">
+        <a href="tel:+74956660166" title="номер телефона +74956660166" class="phone__number"> Тел: +7(495)666-01-66</a>
+      </div>
+      </section>
 
-    <section>
-      <ul>
-        <li><a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
-              alt="logo twitter"></a></li>
-        <li><a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
-              alt="logo facebook"></a></li>
-        <li><a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
-              alt="logo youtube"></a></li>
-      </ul>
-    </section>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
+                alt="logo twitter"></a>
+              </li>
+          <li class="social__list-item">
+            <a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+                alt="logo facebook"></a>
+              </li>
+          <li class="social__list-item">
+            <a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
+                alt="logo youtube"></a>
+              </li>
+        </ul>
+      </section>
 
-    <section>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy"> <img
-          src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a> </section>
-
+      <section class="develop">
+        <span class="develop__text">Website by</span> 
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy">
+          <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a> 
+        </section>
+    </div>
   </footer>
 
 
