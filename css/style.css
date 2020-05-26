@@ -1,0 +1,17 @@
+html{
+    box-sizing: border-box;
+}
+:root{
+    --basic-white: #FFFFFF;
+    --basic-darker-white: #F2F2F2;
+    --basic-more-darker-whire: #EBEBEB;
+    --basic-blue:  #81B3D2;
+    --basic-darker-blue: #669EC0;
+    --basic-more-darker-blue: #5496BD;
+    --basic-black: #000000;
+    --basic-lighter-black: #333333;
+    --basic-grey: #EEEEEE;
+    --basic-brown: #766357;
+    --basic-darker-brown: #604E43;
+    --basic-more-darker-brown: #503E33;
+}
