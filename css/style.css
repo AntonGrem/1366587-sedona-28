@@ -12,6 +12,8 @@ html {
   --basic-black: #000000;
   --basic-lighter-black: #333333;
   --basic-grey: #EEEEEE;
+  --basic-lighter-grey: #E5E5E5;
+  --basic-darker-grey: #666666;
   --basic-brown: #766357;
   --basic-darker-brown: #604E43;
   --basic-more-darker-brown: #503E33;
@@ -39,10 +41,23 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  border: none;
+}
+
 /*_____HEADER_____*/
 .header {
   text-align: center;
   background-color: var(--basic-white);
+}
+
+.menu__list-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 /*_____MAIN_____*/
@@ -57,6 +72,7 @@ a {
 }
 
 .text__sedona-welcome {
+  font-weight: bold;
   font-size: 21px;
   text-align: center;
   text-transform: uppercase;
@@ -89,6 +105,7 @@ a {
 }
 
 .reason__name {
+  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -128,6 +145,7 @@ a {
 }
 
 .befor__form-question {
+  font-weight: bold;
   font-size: 30px;
   line-height: 24px;
   text-align: center;
@@ -142,7 +160,10 @@ a {
   color: var(--basic-lighter-black);
 }
 
-legend {
+.search {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   background-color: var(--basic-brown);
   text-align: center;
   color: var(--basic-white);
@@ -157,12 +178,26 @@ legend {
   background-color: var(--basic-darker-white);
 }
 
+.form__text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase
+}
+
 .button__search {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
 
+/*_____FOOTER_____*/
 .contacts {
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -171,6 +206,8 @@ legend {
 
 .social__list-item {
   background-color: var(--basic-blue);
+  width: 46px;
+  height: 48px;
 }
 
 .develop__text {
@@ -178,4 +215,105 @@ legend {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+
+/*_____HOTELS_____*/
+.menu__selection {
+  background-image: url(../img/background_hotels.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.menu__selection-text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.show__result {
+  border: 2px solid #FFFFFF;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-image: none;
+  background-color: transparent;
+}
+
+.find__text {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.sort__text {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+a.sort__link {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  border-bottom: 1px dashed var(--basic-blue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.frontire {
+  height: 1px;
+  background-color: var(--basic-lighter-grey);
+}
+
+.building__name {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.output__text {
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.details__link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.book__now-link {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+}
+
+.rating {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-darker-grey);
+  background-color: var(--basic-darker-white);
 }

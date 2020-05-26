@@ -12,7 +12,7 @@
 <body>
   <header class="header">
     <div class="container">
-      <a href="#" class="logo__link">
+      <a href="index.html" class="logo__link">
         <img src="img/logo_sedona.svg" width="138" height="70" alt="logo_sedona">
       </a>
       <nav class="menu">
@@ -35,123 +35,131 @@
   </header>
 
   <main>
-    <section>
-      <form action="https://echo.htmlacademy.ru/courses" method="get">
-        <fieldset>
-          <legend>Инфраструктура:</legend>
-          <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
-          <label for="swimming_pool_id">Бассейн</label>
-          <input type="checkbox" name="parking" id="parking_id">
-          <label for="parking_id">Паркова</label>
-          <input type="checkbox" name="WiFi" id="wi_fi_id">
-          <label for="wi_fi_id">Wi-Fi</label>
-        </fieldset>
-        <fieldset>
-          <legend>Тип жилья:</legend>
-          <input type="checkbox" name="hotel" id="hotel_id" checked>
-          <label for="hotel_id">Гостиница</label>
-          <input type="checkbox" name="motel" id="motel_id" checked>
-          <label for="motel_id">Мотель</label>
-          <input type="checkbox" name="apartments" id="apartments_id" checked>
-          <label for="apartments_id">Апартаменты</label>
-        </fieldset>
-        <fieldset>
-          <legend>Стоимость в сутки(Р):</legend>
-          <output name="min_value">0</output>
-          <input type="range" min="0" max="3000" step="1" name="range_value">
-          <output name="max_value">3000</output>
-        </fieldset>
-        <input type="submit" name="show_results" value="Показать">
-      </form>
-    </section>
-    <section>
-      <section>
+    <div class="container">
+      <section class="menu__selection">
+        <form action="https://echo.htmlacademy.ru/courses" method="get">
+          <fieldset>
+            <legend class="headline">Инфраструктура:</legend>
+            <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
+            <label for="swimming_pool_id" class="menu__selection-text">Бассейн</label>
+            <input type="checkbox" name="parking" id="parking_id">
+            <label for="parking_id" class="menu__selection-text">Паркова</label>
+            <input type="checkbox" name="WiFi" id="wi_fi_id">
+            <label for="wi_fi_id" class="menu__selection-text">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend class="headline">Тип жилья:</legend>
+            <input type="checkbox" name="hotel" id="hotel_id" checked>
+            <label for="hotel_id" class="menu__selection-text">Гостиница</label>
+            <input type="checkbox" name="motel" id="motel_id" checked>
+            <label for="motel_id" class="menu__selection-text">Мотель</label>
+            <input type="checkbox" name="apartments" id="apartments_id" checked>
+            <label for="apartments_id" class="menu__selection-text">Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend class="headline">Стоимость в сутки(Р):</legend>
+            <output name="min_value" class="menu__selection-text">0</output>
+            <input type="range" min="0" max="3000" step="1" name="range_value">
+            <output name="max_value" class="menu__selection-text">3000</output>
+          </fieldset>
+          <input type="submit" name="show_results" value="Показать" class="show__result">
+        </form>
+      </section>
 
-        <span>Найдено: <output name="find_results">3</output></span>
-        <section>
-          <span>Сортировка:</span>
+      <section>
+        <section class="sort__section">
+          <span class="find__text">Найдено: <output name="find_results" class="find__text">3</output></span>
+          <section>
+            <span class="sort__text">Сортировка:</span>
+            <ul class="sort__list">
+              <li class="sort__list-item">
+                <a href="#" title="Сортировка по цене" class="sort__link">По цене</a>
+              </li>
+              <li class="sort__list-item">
+                <a href="#" title="Сортировка по типу" class="sort__link">По типу</a>
+              </li>
+              <li class="sort__list-item">
+                <a href="#" title="Сортировка по рейтенгу" class="sort__link">По рейтенгу</a>
+              </li>
+            </ul>
+          </section>
           <ul>
-            <li><a href="#" title="Сортировка по цене">По цене</a></li>
-            <li><a href="#" title="Сортировка по типу">По типу</a></li>
-            <li><a href="#" title="Сортировка по рейтенгу">По рейтенгу</a></li>
+            <li>
+              <a href="#" title="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" width="11" height="10"
+                  alt="logo_up"></a>
+            </li>
+            <li>
+              <a href="#" title="Сортировка по убыванию"><img src="img/icon-down-dir.svg" width="11" height="10"
+                  alt="logo_down"></a>
+            </li>
           </ul>
         </section>
-        <ul>
-          <li>
-            <a href="#" title="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" width="11" height="10"
-                alt="logo_up"></a>
-          </li>
-          <li>
-            <a href="#" title="Сортировка по убыванию"><img src="img/icon-down-dir.svg" width="11" height="10"
-                alt="logo_down"></a>
-          </li>
-        </ul>
-
+        <section class="buildings">
+          <ul class="buildings__list">
+            <div class="frontire"></div>
+            <li class="buildings__list-item">
+              <div class="buildings__img">
+                <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa.">
+              </div>
+              <div>
+                <h2 class="building__name">Amara Resort & Spa</h2>
+                <output name="building_type" class="output__text">Гостиница</output>
+                <output name="cost_at_day" class="output__text">От 4000 р.</output>
+                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
+                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              </div>
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <span class="rating">РЕЙТИНГ</span>
+              </div>
+            </li>
+            <div class="frontire"></div>
+            <li class="buildings__list-item">
+              <div class="buildings__img">
+                <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
+              </div>
+              <div>
+                <h2 class="building__name">Desert Quail Inn</h2>
+                <output name="building_type" class="output__text">Мотель</output>
+                <output name="cost_at_day" class="output__text">От 3000 р.</output>
+                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
+                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              </div>
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <span class="rating">РЕЙТИНГ</span>
+              </div>
+            </li>
+            <div class="frontire"></div>
+            <li class="buildings__list-item">
+              <div class="buildings__img">
+                <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
+              </div>
+              <div>
+                <h2 class="building__name">Villas at Poco Diablo</h2>
+                <output name="building_type" class="output__text">Апартаменты</output>
+                <output name="cost_at_day" class="output__text">От 2000 р.</output>
+                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
+                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              </div>
+              <div class="stars">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                <span class="rating">РЕЙТИНГ</span>
+              </div>
+            </li>
+            <div class="frontire"></div>
+          </ul>
+        </section>
 
       </section>
-      <section>
-        <ul>
-          <li>
-            <div>
-              <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa.">
-            </div>
-            <div>
-              <h2>Amara Resort & Spa</h2>
-              Гостиница
-              От 4000 р.
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div>
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              РЕЙТИНГ
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
-            </div>
-            <div>
-              <h2>Desert Quail Inn</h2>
-              Мотель
-              От 3000 р.
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div>
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              РЕЙТИНГ
-            </div>
-          </li>
-
-          <li>
-            <div>
-              <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
-            </div>
-            <div>
-              <h2>Villas at Poco Diablo</h2>
-              Апартаменты
-              От 2000 р.
-              <a href="#">Подробнее</a>
-              <a href="#">Забронировать</a>
-            </div>
-            <div>
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              РЕЙТИНГ
-            </div>
-
-          </li>
-        </ul>
-      </section>
-    </section>
+    </div>
   </main>
 
   <footer>
