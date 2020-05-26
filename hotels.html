@@ -4,20 +4,34 @@
 <head>
   <meta charset="utf-8">
   <title>HOTELS</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <a href="index.html" title="Возвращение на главую страницу сайта."><img src="img/logo_sedona.svg"
-        alt="Лого Седона"></a>
-    <nav>
-      <ul>
-        <li> <a href="#">Информация</a> </li>
-        <li> <a href="#">Фото и видео</a> </li>
-        <li> <a href="#">Карта штата</a> </li>
-        <li> <a href="#">Гостиницы</a> </li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo__link">
+        <img src="img/logo_sedona.svg" width="138" height="70" alt="logo_sedona">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Информация</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Фото и видео</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="#" class="menu__list-link">Карта штата</a>
+          </li>
+          <li class="menu__list-item">
+            <a href="hotels.html" title="Переход на страницу Гостиницы." class="menu__list-link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
@@ -141,25 +155,38 @@
   </main>
 
   <footer>
-    <section>
-      #visitSEDONA
-      <a href="tel:+74956660166"> Тел: +7(495)666-01-66</a>
-    </section>
+    <div class="container">
+      <section>
+        <span class="contacts">#visitSEDONA</span>
+        <div class="contacts">
+          <a href="tel:+74956660166" title="номер телефона +74956660166" class="phone__number"> Тел:
+            +7(495)666-01-66</a>
+        </div>
+      </section>
 
-    <section>
-      <ul>
-        <li><a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
-              alt="logo_twitter"></a></li>
-        <li><a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
-              alt="logo_facebook"></a></li>
-        <li><a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
-              alt="logo_youtube"></a></li>
-      </ul>
-    </section>
+      <section class="social">
+        <ul class="social__list">
+          <li class="social__list-item">
+            <a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
+                alt="logo twitter"></a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
+                alt="logo facebook"></a>
+          </li>
+          <li class="social__list-item">
+            <a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
+                alt="logo youtube"></a>
+          </li>
+        </ul>
+      </section>
 
-    <section>Website by <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy"> <img
-          src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a> </section>
-
+      <section class="develop">
+        <span class="develop__text">Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" title="Переход на интенсив htmlacademy">
+          <img src="img/logo-htmlacademy.svg" alt="logo htmlacademy"></a>
+      </section>
+    </div>
   </footer>
 
 
