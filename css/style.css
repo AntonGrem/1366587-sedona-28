@@ -47,6 +47,7 @@ fieldset {
 
 /*_____HEADER_____*/
 .header {
+  text-align: center;
   background-color: var(--basic-white);
 }
 
@@ -56,6 +57,9 @@ fieldset {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  color: var(--basic-black);
+}
+.menu__list-item a:link{
   color: var(--basic-black);
 }
 
@@ -87,6 +91,18 @@ fieldset {
   background-color: var(--basic-blue);
 }
 
+.reason__img1 {
+  width: 800px;
+  height: 256px;
+  background-image: url(../img/background_photo_1.jpg);
+}
+
+.reason__img2 {
+  width: 800px;
+  height: 256px;
+  background-image: url(../img/background_photo_2.jpg);
+}
+
 .reason__name-color {
   color: var(--basic-white);
 }
@@ -105,28 +121,18 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
 }
-
-.house__img {
+li .reasons__list-item:first-child{
   background-image: url(../img/house.svg);
   background-repeat: no-repeat;
-  width: 72px;
-  height: 75px;
 }
-
-.food__img {
+li .reasons__list-item:nth-child(2){
   background-image: url(../img/food.svg);
   background-repeat: no-repeat;
-  width: 70px;
-  height: 75px;
 }
-
-.souvenir__img {
+li .reasons__list-item:last-child{
   background-image: url(../img/box.svg);
   background-repeat: no-repeat;
-  width: 70px;
-  height: 75px;
 }
-
 .background__color-item {
   background-color: var(--basic-grey);
 }
@@ -151,8 +157,8 @@ fieldset {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  background-color: var(--basic-brown);
   text-align: center;
-  background-color: var(--basic-brown);  
   color: var(--basic-white);
 }
 
@@ -181,6 +187,14 @@ fieldset {
   background-color: var(--basic-blue);
   color: var(--basic-white);
 }
+.button__search:hover{
+  background-color: var(--basic-darker-blue);
+}
+.button__search:active{
+  background-color: var(--basic-more-darker-blue);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
 
 /*_____FOOTER_____*/
 .contacts {
@@ -202,6 +216,23 @@ fieldset {
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+}
+.social__list-item:hover{
+  background-color: var(--basic-darker-blue);
+}
+.social__list-item:active{
+  background-color: var(--basic-more-darker-blue);
+}
+.develop__htmlacademy-link{
+  background-image: url(../img/logo-htmlacademy.svg);
+  width: 115px;
+  height: 41px;
+}
+.develop__htmlacademy-link:hover{
+  background-image: url(../img/guidance-logo-htmlacademy.svg);
+  }
+.develop__htmlacademy-link:active{
+  background-image: url(../img/pressing-logo-htmlacademy.svg);
 }
 
 /*_____HOTELS_____*/
