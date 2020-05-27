@@ -90,13 +90,13 @@ fieldset {
   background-color: var(--basic-blue);
 }
 
-.reason__img1 {
+.reason__img-ranch {
   width: 800px;
   height: 256px;
   background-image: url(../img/background_photo_1.jpg);
 }
 
-.reason__img2 {
+.reason__img-canyon {
   width: 800px;
   height: 256px;
   background-image: url(../img/background_photo_2.jpg);
