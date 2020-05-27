@@ -47,7 +47,6 @@ fieldset {
 
 /*_____HEADER_____*/
 .header {
-  text-align: center;
   background-color: var(--basic-white);
 }
 
@@ -61,7 +60,7 @@ fieldset {
 }
 
 /*_____MAIN_____*/
-.welcome_sedona {
+.welcome__sedona {
   background-image: url(../img/main_background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,18 +85,6 @@ fieldset {
 
 .background__reason {
   background-color: var(--basic-blue);
-}
-
-.reason__img1 {
-  width: 800px;
-  height: 256px;
-  background-image: url(../img/background_photo_1.jpg);
-}
-
-.reason__img2 {
-  width: 800px;
-  height: 256px;
-  background-image: url(../img/background_photo_2.jpg);
 }
 
 .reason__name-color {
@@ -144,7 +131,7 @@ fieldset {
   background-color: var(--basic-grey);
 }
 
-.befor__form-question {
+.before__form-question {
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
@@ -152,7 +139,7 @@ fieldset {
   text-transform: uppercase;
 }
 
-.befor__form-text {
+.before__form-text {
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -164,8 +151,8 @@ fieldset {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-brown);
   text-align: center;
+  background-color: var(--basic-brown);  
   color: var(--basic-white);
 }
 
