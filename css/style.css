@@ -201,7 +201,10 @@ li .reasons__list-item:last-child{
   font-size: 21px;
   line-height: 26px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: uppercase;  
+}
+.contacts a{
+  color: var(--basic-black);
 }
 
 .social__list-item {
