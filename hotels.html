@@ -36,77 +36,79 @@
 
   <main>
     <div class="container">
-      <section class="menu__selection">
+      <section class="selection">
         <form action="https://echo.htmlacademy.ru/courses" method="get">
           <fieldset>
-            <legend class="headline">Инфраструктура:</legend>
+            <legend class="selection__headline">Инфраструктура:</legend>
             <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
-            <label for="swimming_pool_id" class="menu__selection-text">Бассейн</label>
+            <label for="swimming_pool_id" class="selection__text">Бассейн</label>
             <input type="checkbox" name="parking" id="parking_id">
-            <label for="parking_id" class="menu__selection-text">Паркова</label>
+            <label for="parking_id" class="selection__text">Паркова</label>
             <input type="checkbox" name="WiFi" id="wi_fi_id">
-            <label for="wi_fi_id" class="menu__selection-text">Wi-Fi</label>
+            <label for="wi_fi_id" class="selection__text">Wi-Fi</label>
           </fieldset>
           <fieldset>
-            <legend class="headline">Тип жилья:</legend>
+            <legend class="selection__headline">Тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel_id" checked>
-            <label for="hotel_id" class="menu__selection-text">Гостиница</label>
+            <label for="hotel_id" class="selection__text">Гостиница</label>
             <input type="checkbox" name="motel" id="motel_id" checked>
-            <label for="motel_id" class="menu__selection-text">Мотель</label>
+            <label for="motel_id" class="selection__text">Мотель</label>
             <input type="checkbox" name="apartments" id="apartments_id" checked>
-            <label for="apartments_id" class="menu__selection-text">Апартаменты</label>
+            <label for="apartments_id" class="selection__text">Апартаменты</label>
           </fieldset>
           <fieldset>
-            <legend class="headline">Стоимость в сутки(Р):</legend>
-            <output name="min_value" class="menu__selection-text">0</output>
+            <legend class="selection__headline">Стоимость в сутки(Р):</legend>
+            <span class="selection__text">0</span>
             <input type="range" min="0" max="3000" step="1" name="range_value">
-            <output name="max_value" class="menu__selection-text">3000</output>
+            <span class="selection__text">3000</span>
           </fieldset>
-          <input type="submit" name="show_results" value="Показать" class="show__result">
+          <input type="submit" name="show_results" value="Показать" class="selection__result">
         </form>
       </section>
 
-      <section>
-        <section class="sort__section">
-          <span class="find__text">Найдено: <output name="find_results" class="find__text">3</output></span>
-          <section>
-            <span class="sort__text">Сортировка:</span>
-            <ul class="sort__list">
-              <li class="sort__list-item">
-                <a href="#" title="Сортировка по цене" class="sort__link">По цене</a>
+        <section class="sorting">
+          <span class="sorting__find">Найдено: <output name="find_results" class="sorting__find">3</output></span>
+            <span class="sorting__text">Сортировка:</span>
+            <ul class="sorting__list">
+              <li class="sorting__list-item">
+                <a href="#" title="Сортировка по цене" >По цене</a>
               </li>
-              <li class="sort__list-item">
-                <a href="#" title="Сортировка по типу" class="sort__link">По типу</a>
+              <li class="sorting__list-item">
+                <a href="#" title="Сортировка по типу">По типу</a>
               </li>
-              <li class="sort__list-item">
-                <a href="#" title="Сортировка по рейтенгу" class="sort__link">По рейтенгу</a>
+              <li class="sorting__list-item">
+                <a href="#" title="Сортировка по рейтенгу">По рейтенгу</a>
               </li>
-            </ul>
-          </section>
-          <ul>
-            <li>
-              <a href="#" title="Сортировка по возрастанию"><img src="img/icon-up-dir.svg" width="11" height="10"
-                  alt="logo_up"></a>
+            </ul>         
+          <ul class="sorting__ul">
+            <li class="sorting__ul-li">
+              <a href="#" title="Сортировка по возрастанию">
+                <div class="sorting__ul-li--upper-triangle"></div>
+              </a>
             </li>
-            <li>
-              <a href="#" title="Сортировка по убыванию"><img src="img/icon-down-dir.svg" width="11" height="10"
-                  alt="logo_down"></a>
+            <li class="sorting__ul-li">
+              <a href="#" title="Сортировка по убыванию">
+                <div class="sorting__ul-li--lower-triangle"></div></a>
             </li>
           </ul>
         </section>
         <section class="buildings">
           <ul class="buildings__list">
-            <div class="frontire"></div>
             <li class="buildings__list-item">
               <div class="buildings__img">
                 <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa.">
               </div>
-              <div>
-                <h2 class="building__name">Amara Resort & Spa</h2>
-                <output name="building_type" class="output__text">Гостиница</output>
-                <output name="cost_at_day" class="output__text">От 4000 р.</output>
-                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
-                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              <div class="buildings__list-item--info">
+                <h3>Amara Resort & Spa</h3>
+                <span>Гостиница</span>
+                <span>От 4000 р.</span>
+                <div  class="details__link">
+                  <a href="#" title="Подробная информация">Подробнее</a>
+                </div>
+                <div  class="book__now-link">
+                  <a href="#" title="Забронироваь">Забронировать</a>
+                </div>
+                
               </div>
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
@@ -114,77 +116,84 @@
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
-                <span class="rating">РЕЙТИНГ</span>
+                <span class="stars__rating">РЕЙТИНГ 8.5</span>
               </div>
             </li>
-            <div class="frontire"></div>
             <li class="buildings__list-item">
               <div class="buildings__img">
                 <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
               </div>
-              <div>
-                <h2 class="building__name">Desert Quail Inn</h2>
-                <output name="building_type" class="output__text">Мотель</output>
-                <output name="cost_at_day" class="output__text">От 3000 р.</output>
-                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
-                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              <div class="buildings__list-item--info">
+                <h3>Desert Quail Inn</h3>
+                <span>Мотель</span>
+                <span>От 3000 р.</span>
+                <div  class="details__link">
+                  <a href="#" title="Подробная информация">Подробнее</a>
+                </div>
+                <div  class="book__now-link">
+                  <a href="#" title="Забронироваь">Забронировать</a>
+                </div>
               </div>
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
-                <span class="rating">РЕЙТИНГ</span>
+                <span class="stars__rating">РЕЙТИНГ 8.9</span>
               </div>
             </li>
-            <div class="frontire"></div>
             <li class="buildings__list-item">
               <div class="buildings__img">
                 <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
               </div>
-              <div>
-                <h2 class="building__name">Villas at Poco Diablo</h2>
-                <output name="building_type" class="output__text">Апартаменты</output>
-                <output name="cost_at_day" class="output__text">От 2000 р.</output>
-                <a href="#" title="Подробная информация" class="details__link">Подробнее</a>
-                <a href="#" title="Забронироваь" class="book__now-link">Забронировать</a>
+              <div class="buildings__list-item--info">
+                <h3>Villas at Poco Diablo</h3>
+                <span>Апартаменты</span>
+                <span>От 2000 р.</span>
+                <div  class="details__link">
+                  <a href="#" title="Подробная информация">Подробнее</a>
+                </div>
+                <div  class="book__now-link">
+                  <a href="#" title="Забронироваь">Забронировать</a>
+                </div>
               </div>
               <div class="stars">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
                 <img src="img/star.svg" width="19" height="17" alt="logo_star">
-                <span class="rating">РЕЙТИНГ</span>
+                <span class="stars__rating">РЕЙТИНГ 9.2</span>
               </div>
             </li>
-            <div class="frontire"></div>
           </ul>
         </section>
 
-      </section>
+      
     </div>
   </main>
 
   <footer>
     <div class="container">
-      <section>
-        <span class="contacts">#visitSEDONA</span>
-        <div class="contacts">
-          <a href="tel:+74956660166" title="номер телефона +74956660166" class="phone__number"> Тел:
+      <section class="contacts">
+        <span>#visitSEDONA</span>
+        <div class="contacts__phone-number">
+          <a href="tel:+74956660166" title="номер телефона +74956660166"> Тел:
             +7(495)666-01-66</a>
         </div>
       </section>
-
       <section class="social">
         <ul class="social__list">
           <li class="social__list-item">
-            <a href="#" title="Переход в Twitter"><img src="img/twitter.svg" width="17" height="17"
-                alt="logo twitter"></a>
+            <a href="#" title="Переход в Twitter">
+              <div class="social__twitter"></div>
+            </a>
           </li>
           <li class="social__list-item">
-            <a href="#" title="Переход в Facebook"><img src="img/fb-icon.svg" width="12" height="22"
-                alt="logo facebook"></a>
+            <a href="#" title="Переход в Facebook">
+              <div class="social__facebook"></div>
+            </a>
           </li>
           <li class="social__list-item">
-            <a href="#" title="Переход в YouTube"><img src="img/youtube.svg" width="20" height="16"
-                alt="logo youtube"></a>
+            <a href="#" title="Переход в YouTube">
+              <div class="social__youtube"></div>
+            </a>
           </li>
         </ul>
       </section>
