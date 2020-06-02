@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
+  <div class="container">
+    <header class="header">
       <a href="index.html" class="logo__link">
         <img src="img/logo_sedona.svg" width="138" height="70" alt="logo_sedona">
       </a>
@@ -31,44 +31,57 @@
           </li>
         </ul>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="container">
+    </header>
+    <main>
       <section class="selection">
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
-          <fieldset>
+        <form action="https://echo.htmlacademy.ru/courses" method="get" class="selection__form">
+          <fieldset class="selection__first">
             <legend class="selection__headline">Инфраструктура:</legend>
+            <div class="swimming_pool">
             <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
             <label for="swimming_pool_id" class="selection__text">Бассейн</label>
+          </div>
+          <div class="parking">
             <input type="checkbox" name="parking" id="parking_id">
             <label for="parking_id" class="selection__text">Паркова</label>
+          </div>
+          <div class="wifi">
             <input type="checkbox" name="WiFi" id="wi_fi_id">
             <label for="wi_fi_id" class="selection__text">Wi-Fi</label>
+          </div>
           </fieldset>
-          <fieldset>
+          <fieldset  class="selection__second">
             <legend class="selection__headline">Тип жилья:</legend>
+            <div class="hotel">
             <input type="checkbox" name="hotel" id="hotel_id" checked>
             <label for="hotel_id" class="selection__text">Гостиница</label>
+            </div>
+            <div class="motel">
             <input type="checkbox" name="motel" id="motel_id" checked>
             <label for="motel_id" class="selection__text">Мотель</label>
+          </div>
+          <div class="apartments">
             <input type="checkbox" name="apartments" id="apartments_id" checked>
             <label for="apartments_id" class="selection__text">Апартаменты</label>
+          </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="selection__third">
             <legend class="selection__headline">Стоимость в сутки(Р):</legend>
-            <span class="selection__text">0</span>
-            <input type="range" min="0" max="3000" step="1" name="range_value">
-            <span class="selection__text">3000</span>
+            <div class="min__max">
+            <span class="selection__text">от 0</span>
+            <span class="selection__text">до 3000</span>
+            </div>
+            <input type="range" min="0" max="3000" step="1" name="range_value">            
           </fieldset>
           <input type="submit" name="show_results" value="Показать" class="selection__result">
         </form>
       </section>
 
       <section class="sorting">
+        <div class="sorting__find--div">
         <span class="sorting__find">Найдено: <output name="find_results" class="sorting__find">3</output></span>
         <span class="sorting__text">Сортировка:</span>
+      </div>
         <ul class="sorting__list">
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по цене" class="sorting__list-item-cost">По цене</a>
@@ -114,8 +127,8 @@
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <span class="stars__rating">РЕЙТИНГ 8.5</span>
-            </div>
+            </div>            
+            <span class="stars__rating">РЕЙТИНГ 8.5</span>
           </li>
           <li class="buildings__list-item">
             <div class="buildings__img">
@@ -162,11 +175,9 @@
           </li>
         </ul>
       </section>
-    </div>
-  </main>
+    </main>
 
-  <footer>
-    <div class="container">
+    <footer class="footer">
       <section class="contacts">
         <span>#visitSEDONA</span>
         <div class="contacts__phone-number">
@@ -199,9 +210,8 @@
           <div class="develop__htmlacademy-link"></div>
         </a>
       </section>
-    </div>
-  </footer>
-
+    </footer>
+  </div>
 
 
 </body>
