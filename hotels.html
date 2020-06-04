@@ -33,48 +33,52 @@
       </nav>
     </header>
     <main>
-      <section class="selection">
-        <form action="https://echo.htmlacademy.ru/courses" method="get" class="selection__form">
-          <fieldset class="selection__first">
-            <legend class="selection__headline">Инфраструктура:</legend>
-            <div class="swimming_pool">
+      <section class="choice">
+        <form action="https://echo.htmlacademy.ru/courses" method="get" class="choice__form">
+          <fieldset class="choice__first">
+            <legend class="choice__headline">Инфраструктура:</legend>
+              <ul class="choice__list">
+                <li class="choice__list-item">            
               <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
-              <label for="swimming_pool_id" class="selection__text">Бассейн</label>
-            </div>
-            <div class="parking">
+              <label for="swimming_pool_id" class="choice__text">Бассейн</label>
+            </li>
+              <li class="choice__list-item"> 
               <input type="checkbox" name="parking" id="parking_id">
-              <label for="parking_id" class="selection__text">Паркова</label>
-            </div>
-            <div class="wifi">
+              <label for="parking_id" class="choice__text">Паркова</label>
+            </li> 
+              <li class="choice__list-item">  
               <input type="checkbox" name="WiFi" id="wi_fi_id">
-              <label for="wi_fi_id" class="selection__text">Wi-Fi</label>
-            </div>
+              <label for="wi_fi_id" class="choice__text">Wi-Fi</label>
+            </li>
+            </ul>
           </fieldset>
-          <fieldset class="selection__second">
-            <legend class="selection__headline">Тип жилья:</legend>
-            <div class="hotel">
+          <fieldset class="choice__second">
+            <legend class="choice__headline">Тип жилья:</legend>
+            <ul class="choice__list"> 
+              <li class="choice__list-item"> 
               <input type="checkbox" name="hotel" id="hotel_id" checked>
-              <label for="hotel_id" class="selection__text">Гостиница</label>
-            </div>
-            <div class="motel">
+              <label for="hotel_id" class="choice__text">Гостиница</label>
+            </li> 
+              <li class="choice__list-item">  
               <input type="checkbox" name="motel" id="motel_id" checked>
-              <label for="motel_id" class="selection__text">Мотель</label>
-            </div>
-            <div class="apartments">
+              <label for="motel_id" class="choice__text">Мотель</label>
+            </li>            
+              <li class="choice__list-item">
               <input type="checkbox" name="apartments" id="apartments_id" checked>
-              <label for="apartments_id" class="selection__text">Апартаменты</label>
-            </div>
+              <label for="apartments_id" class="choice__text">Апартаменты</label>
+            </li>  
+            </ul>
           </fieldset>
-          <div class="selection__third">
+          <div class="choice__third">
             <fieldset>
-              <legend class="selection__headline">Стоимость в сутки(Р):</legend>
+              <legend class="choice__headline">Стоимость в сутки(Р):</legend>
               <div class="min__max">
-                <span class="selection__text">от 0</span>
-                <span class="selection__text">до 3000</span>
+                <span class="choice__text">от 0</span>
+                <span class="choice__text">до 3000</span>
               </div>
               <input type="range" min="0" max="3000" step="1" name="range_value">
             </fieldset>
-            <input type="submit" name="show_results" value="Показать" class="selection__result">
+            <input type="submit" name="show_results" value="Показать" class="choice__result">
           </div>
         </form>
       </section>
@@ -112,17 +116,17 @@
             <div class="buildings__img">
               <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa.">
             </div>
-            <div class="buildings__list-item--info">
+            <div class="buildings__item-info">
               <h3>Amara Resort & Spa</h3>
-              <div class="test">
+              <div class="buildings__text">
                 <span>Гостиница</span>
                 <span>От 4000 р.</span>
               </div>
-              <div class="details__book">
-                <div class="details__link">
+              <div class="buildings__links">
+                <div class="buildings__links-details">
                   <a href="#" title="Подробная информация">Подробнее</a>
                 </div>
-                <div class="book__now-link">
+                <div class="buildings__links-book">
                   <a href="#" title="Забронироваь">Забронировать</a>
                 </div>
               </div>
@@ -137,21 +141,81 @@
               <span class="stars__rating">РЕЙТИНГ 8.5</span>
             </div>
           </li>
+            <li class="buildings__list-item">
+              <div class="buildings__img">
+                <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
+              </div>
+              <div class="buildings__item-info">
+                <h3>Desert Quail Inn</h3>
+                <div class="buildings__text">
+                  <span>Мотель</span>
+                  <span>От 3000 р.</span>
+                </div>
+                <div class="buildings__links">
+                  <div class="buildings__links-details">
+                    <a href="#" title="Подробная информация">Подробнее</a>
+                  </div>
+                  <div class="buildings__links-book">
+                    <a href="#" title="Забронироваь">Забронировать</a>
+                  </div>
+                </div>
+              </div>
+              <div class="stars">
+                <div class="stars__test">
+                  <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                  <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                  <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                </div>
+                <span class="stars__rating">РЕЙТИНГ 8.9</span>
+              </div>
+            </li>
+           
+              <li class="buildings__list-item">
+                <div class="buildings__img">
+                  <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
+                </div>
+                <div class="buildings__item-info">
+                  <h3>Villas at Poco Diablo</h3>
+                  <div class="buildings__text">
+                    <span>Апартаменты</span>
+                    <span>От 2000 р.</span>
+                  </div>
+                  <div class="buildings__links">
+                    <div class="buildings__links-details">
+                      <a href="#" title="Подробная информация">Подробнее</a>
+                    </div>
+                    <div class="buildings__links-book">
+                      <a href="#" title="Забронироваь">Забронировать</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="stars">
+                  <div class="stars__test">                    
+                    <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                    <img src="img/star.svg" width="19" height="17" alt="logo_star">
+                  </div>
+                  <span class="stars__rating">РЕЙТИНГ 9.2</span>
+                </div>
+              </li>
+          <!--
           <li class="buildings__list-item">
             <div class="buildings__img">
               <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
             </div>
-            <div class="buildings__list-item--info">
+            <div class="buildings__item-info">
               <h3>Desert Quail Inn</h3>
+              <div class="buildings__text">
               <span>Мотель</span>
               <span>От 3000 р.</span>
-              <div class="details__link">
-                <a href="#" title="Подробная информация">Подробнее</a>
+             </div>
+              <div class="buildings__links">
+                <div class="buildings__links-details">
+                  <a href="#" title="Подробная информация">Подробнее</a>
+                </div>
+                <div class="buildings__links-book">
+                  <a href="#" title="Забронироваь">Забронировать</a>
+                </div>
               </div>
-              <div class="book__now-link">
-                <a href="#" title="Забронироваь">Забронировать</a>
-              </div>
-            </div>
             <div class="stars">
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
@@ -163,7 +227,7 @@
             <div class="buildings__img">
               <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
             </div>
-            <div class="buildings__list-item--info">
+            <div class="buildings__item-info">
               <h3>Villas at Poco Diablo</h3>
               <span>Апартаменты</span>
               <span>От 2000 р.</span>
@@ -179,7 +243,7 @@
               <img src="img/star.svg" width="19" height="17" alt="logo_star">
               <span class="stars__rating">РЕЙТИНГ 9.2</span>
             </div>
-          </li>
+          </li>-->
         </ul>
       </section>
     </main>
