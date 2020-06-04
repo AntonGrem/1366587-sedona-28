@@ -222,30 +222,6 @@ display: flex;
   padding:47px 57px 54px 96px;
 }
 
-/*.reasons__list-item--div{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-grow: 1;
-  padding-top: 47px;
-  padding-bottom: 54px;
-}
-.reasons__list-item--div h3{
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--basic-black);
-}
-.reasons__list-item--div span,
-.reasons__list-item--div p{
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--basic-lighter-black);
-}*/
 .form{
   position: relative;
 }
@@ -520,38 +496,13 @@ padding-right: 11px;
 .selection fieldset {
   border: none;
 }
-.selection__first,
-.selection__second,
-.selection__third{
-  display: flex;
-}
-
 .selection__form{
-  display: grid;
-  grid-template-columns:
-  210px 300px 200px 300px;
-  grid-template-rows: 150px;
-  padding-top: 26px;
-  padding-bottom: 31px;
-  padding-left: 72px;
-}
-.selection__first{
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.selection__second{
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-}
-.selection__third{
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 25px;
 }
 .min__max{
   border: 2px solid #FFFFFF;
@@ -565,7 +516,7 @@ padding-right: 11px;
   line-height: 21px;
   text-transform: uppercase;
   color: var(--basic-white);
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 
 .selection__text {
@@ -574,7 +525,13 @@ padding-right: 11px;
   text-transform: uppercase;
   color: var(--basic-white);
 }
-
+.selection__second{
+  margin-right: 120px;
+}
+.selection__third{
+  text-align: center;
+  width: 320px;
+}
 .selection__result {
   border: 2px solid #FFFFFF;
   border-radius: 2px;
@@ -597,7 +554,7 @@ padding-right: 11px;
 .hotel,
 .motel,
 .apartments{
-  padding-bottom: 25px;
+  padding-bottom: 15px;
 }
 .sorting{
   padding-left: 70px;
@@ -694,26 +651,40 @@ padding-right: 11px;
 .sorting__list-item-down:active {
   background-image: url(../img/pressing_down.svg);
 }
-
+.buildings__img {
+  margin-right: 29px;
+}
 .buildings__list {
   list-style-type: none;
 }
 .buildings__list-item{
   display: flex;
-  align-items: center;
 }
 .buildings__list-item--info{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding-top: 23px;
+  padding-right: 522px;
+  padding-bottom: 33px;
+}
+.test,
+.details__book{
+  display: flex;
+  justify-content: space-between;
 }
 .stars{
-  align-self: flex-start;
+  display: flex;
+  flex-direction: column;  
+  justify-content: space-between;
 }
 .buildings__list-item h3 {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 .buildings__list-item span {
@@ -730,6 +701,7 @@ padding-right: 11px;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  padding: 3px 10px 3px 10px;
 }
 
 .book__now-link a {
@@ -740,6 +712,7 @@ padding-right: 11px;
   text-transform: uppercase;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  padding: 3px 10px 3px 10px;
 }
 
 .stars__rating {
