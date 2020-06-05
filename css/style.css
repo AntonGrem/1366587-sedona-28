@@ -49,20 +49,27 @@ body {
 .menu__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-right: 72px;
   padding-left: 72px;
   padding-top: 15px;
 }
 
 .menu__list-item {
-  width: calc(25% - 130px);
+  width: calc(23%);
   list-style-type: none;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: var(--basic-black);
+}
+.menu__list-item:nth-of-type(3n){
+  margin-right: auto;
+}
+.menu__list-item:nth-of-type(3),
+.menu__list-item:nth-of-type(4){
+  text-align: right;
 }
 .menu__list-item a {
   text-decoration: none;
@@ -739,7 +746,10 @@ body {
   justify-content: space-between;
   padding-right: 55px;
 }
+.stars__test{
+  text-align: right;
 
+}
 .buildings__list-item h3 {
   font-weight: bold;
   font-size: 21px;
