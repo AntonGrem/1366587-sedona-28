@@ -38,17 +38,26 @@
           <fieldset class="choice__first">
             <legend class="choice__headline">Инфраструктура:</legend>
               <ul class="choice__list">
-                <li class="choice__list-item">            
-              <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked>
-              <label for="swimming_pool_id" class="choice__text">Бассейн</label>
+                <li class="choice__list-item">   
+              <label for="swimming_pool_id" class="choice__text">
+                <input type="checkbox" name="swimming_pool" id="swimming_pool_id" checked class="real__checkbox">
+                <span class="fake__checkbox"></span>
+                Бассейн
+              </label>
             </li>
-              <li class="choice__list-item"> 
-              <input type="checkbox" name="parking" id="parking_id">
-              <label for="parking_id" class="choice__text">Паркова</label>
+              <li class="choice__list-item">               
+              <label for="parking_id" class="choice__text">
+                <input type="checkbox" name="parking" id="parking_id" class="real__checkbox">
+                <span class="fake__checkbox"></span>
+                Паркова
+              </label>
             </li> 
-              <li class="choice__list-item">  
-              <input type="checkbox" name="WiFi" id="wi_fi_id">
-              <label for="wi_fi_id" class="choice__text">Wi-Fi</label>
+              <li class="choice__list-item"> 
+              <label for="wi_fi_id" class="choice__text">
+                <input type="checkbox" name="WiFi" id="wi_fi_id" class="real__checkbox">
+                <span class="fake__checkbox"></span>
+                Wi-Fi
+              </label>
             </li>
             </ul>
           </fieldset>
@@ -56,16 +65,24 @@
             <legend class="choice__headline">Тип жилья:</legend>
             <ul class="choice__list"> 
               <li class="choice__list-item"> 
-              <input type="checkbox" name="hotel" id="hotel_id" checked>
-              <label for="hotel_id" class="choice__text">Гостиница</label>
+              <label for="hotel_id" class="choice__text">
+                <input type="checkbox" name="hotel" id="hotel_id" checked class="real__checkbox">
+                <span class="fake__checkbox"></span>
+                Гостиница
+              </label>
             </li> 
-              <li class="choice__list-item">  
-              <input type="checkbox" name="motel" id="motel_id" checked>
-              <label for="motel_id" class="choice__text">Мотель</label>
+              <li class="choice__list-item"> 
+              <label for="motel_id" class="choice__text">
+                <input type="checkbox" name="motel" id="motel_id" checked class="real__checkbox">
+                <span class="fake__checkbox"></span>
+                Мотель
+              </label>
             </li>            
               <li class="choice__list-item">
-              <input type="checkbox" name="apartments" id="apartments_id" checked>
-              <label for="apartments_id" class="choice__text">Апартаменты</label>
+              <label for="apartments_id" class="choice__text">
+              <input type="checkbox" name="apartments" id="apartments_id" checked class="real__checkbox">
+              <span class="fake__checkbox"></span>
+                Апартаменты</label>
             </li>  
             </ul>
           </fieldset>
@@ -76,7 +93,7 @@
                 <span class="choice__text">от 0</span>
                 <span class="choice__text">до 3000</span>
               </div>
-              <input type="range" min="0" max="3000" step="1" name="range_value">
+              <input type="range" min="0" max="3000" step="1" name="range_value" class="range">
             </fieldset>
             <input type="submit" name="show_results" value="Показать" class="choice__result">
           </div>
@@ -197,53 +214,6 @@
                   <span class="stars__rating">РЕЙТИНГ 9.2</span>
                 </div>
               </li>
-          <!--
-          <li class="buildings__list-item">
-            <div class="buildings__img">
-              <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
-            </div>
-            <div class="buildings__item-info">
-              <h3>Desert Quail Inn</h3>
-              <div class="buildings__text">
-              <span>Мотель</span>
-              <span>От 3000 р.</span>
-             </div>
-              <div class="buildings__links">
-                <div class="buildings__links-details">
-                  <a href="#" title="Подробная информация">Подробнее</a>
-                </div>
-                <div class="buildings__links-book">
-                  <a href="#" title="Забронироваь">Забронировать</a>
-                </div>
-              </div>
-            <div class="stars">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <span class="stars__rating">РЕЙТИНГ 8.9</span>
-            </div>
-          </li>
-          <li class="buildings__list-item">
-            <div class="buildings__img">
-              <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
-            </div>
-            <div class="buildings__item-info">
-              <h3>Villas at Poco Diablo</h3>
-              <span>Апартаменты</span>
-              <span>От 2000 р.</span>
-              <div class="details__link">
-                <a href="#" title="Подробная информация">Подробнее</a>
-              </div>
-              <div class="book__now-link">
-                <a href="#" title="Забронироваь">Забронировать</a>
-              </div>
-            </div>
-            <div class="stars">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <img src="img/star.svg" width="19" height="17" alt="logo_star">
-              <span class="stars__rating">РЕЙТИНГ 9.2</span>
-            </div>
-          </li>-->
         </ul>
       </section>
     </main>

@@ -592,6 +592,30 @@ body {
   text-align: center;
   width: 320px;
 }
+.real__checkbox{
+  display: none;
+}
+.fake__checkbox{
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox_off.svg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.fake__checkbox::before{
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox_on.svg);
+  background-repeat: no-repeat;
+  opacity: 0;
+}
+.real__checkbox:checked + .fake__checkbox::before{
+  opacity: 1;
+}
 
 .choice__result {
   border: 2px solid #FFFFFF;
