@@ -87,13 +87,26 @@
             </ul>
           </fieldset>
           <div class="choice__third">
-            <fieldset>
+            <fieldset claas="filter__price">
               <legend class="choice__headline">Стоимость в сутки(Р):</legend>
               <div class="min__max">
-                <span class="choice__text">от 0</span>
-                <span class="choice__text">до 3000</span>
+                <label class="min__price">
+                  <span class="choice__text"> от</span>
+                   <input type="number" name="min__price" value="0" class="min__price-input">
+                </label>
+                <div class="delimiter"></div>
+                <label class="max__price">
+                  <span class="choice__text">до</span> 
+                  <input type="number" name="max__price" value="3000" class="max__price-input">
+                </label>
+              </div>              
+              <div class="range__controls">
+                <div class="scale">
+                  <div class="bar" style=" width: 30%; margin-left: 20%"></div>
+                </div>
+                <div class="toggle toggle__min" tabindex="0" style="left: 20%"></div>
+                <div class="toggle toggle__max" tabindex="0" style="left: 50%"></div>
               </div>
-              <input type="range" min="0" max="3000" step="1" name="range_value" class="range">
             </fieldset>
             <input type="submit" name="show_results" value="Показать" class="choice__result">
           </div>
@@ -107,13 +120,13 @@
         </div>
         <ul class="sorting__list">
           <li class="sorting__list-item">
-            <a href="#" title="Сортировка по цене" class="sorting__list-item-cost">По цене</a>
+            <a href="#" title="Сортировка по цене" ><span class="sorting__list-item-cost">По цене</span></a>
           </li>
           <li class="sorting__list-item">
-            <a href="#" title="Сортировка по типу" class="sorting__list-item-type">По типу</a>
+            <a href="#" title="Сортировка по типу"><span class="sorting__list-item-cost">По типу</span></a>
           </li>
           <li class="sorting__list-item">
-            <a href="#" title="Сортировка по рейтенгу" class="sorting__list-item-rait">По рейтенгу</a>
+            <a href="#" title="Сортировка по рейтенгу"><span class="sorting__list-item-cost">По рейтенгу</span></a>
           </li>
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по возрастанию">
