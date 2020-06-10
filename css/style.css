@@ -81,10 +81,6 @@ body {
   color: var(--basic-black);
 }
 
-.menu__list-item a:visited {
-  color: var(--basic-brown);
-}
-
 .menu__list-item a:hover {
   color: var(--basic-blue);
 }
@@ -323,7 +319,8 @@ body {
   background-color: var(--basic-more-darker-brown);
 }
 
-.form__button-search span:active {
+.form__button-search span:active,
+.form__button-find span:active {
   color: var(--basic-white);
   opacity: 0.3;
 }
@@ -358,7 +355,7 @@ body {
 }
 
 .input__juniors {
-  padding-left: 50px;
+  padding-left: 75px;
 }
 
 /*.input__elders {
@@ -413,7 +410,6 @@ body {
 
 .input__adult,
 .input__children {
-  width: 114px;
   min-height: 20px;
   background-color: var(--basic-darker-white);
 }
@@ -421,10 +417,11 @@ body {
 .form__input-adult,
 .form__input-children {
   width: 28px;
-  padding-top: 6px;
+ /* padding-top: 6px;
   padding-right: 6px;
   padding-bottom: 6px;
-  padding-left: 10px;
+  padding-left: 10px;*/
+  text-align: center;
 }
 
 .form__button-less,
@@ -438,7 +435,7 @@ body {
 .form__input-children,
 .form__sing-in-date,
 .form__sing-out-date {
-  border: none;
+  border: 2px solid var(--basic-darker-white);
 }
 
 .form__sing-in-date,
@@ -466,21 +463,21 @@ body {
 }
 
 .form__button-find {
+  background-color: var(--basic-blue);
+  border: none;  
+  padding-top: 16px;
+  padding-right: 205px;
+  padding-bottom: 16px;
+  padding-left: 205px;
+}
+.form__button-find span{
+  color: var(--basic-white);
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-  padding-top: 16px;
-  padding-right: 205px;
-  padding-bottom: 16px;
-  padding-left: 205px;
-  border: none;
-
 }
-
 .form__button-find:hover {
   background-color: var(--basic-darker-blue);
 }
@@ -612,10 +609,11 @@ body {
 .develop__htmlacademy-link:active {
   background-image: url("../img/pressing-logo-htmlacademy.svg");
 }
-
-.social__list-item:first-child,
-.social__list-item:nth-child(2) {
-  margin-right: 6px;
+.social__list li:not(:nth-of-type(3)){
+  margin-right: 6px;  
+}
+.social__list li{
+  margin-bottom: 6px;
 }
 
 /*_____HOTELS_____*/
@@ -652,6 +650,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  text-align: left;
   color: var(--basic-white);
   padding-bottom: 15px;
 }
@@ -675,7 +674,13 @@ body {
 .real__checkbox {
   display: none;
 }
-
+.choice__div .choice__div-text{
+  padding-left: 17px;
+}
+.choice__div{
+  display: flex;
+  align-items: center;
+}
 .fake__checkbox {
   display: inline-block;
   width: 27px;
@@ -695,7 +700,14 @@ body {
   background-repeat: no-repeat;
   opacity: 0;
 }
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .real__checkbox:checked+.fake__checkbox::before {
   opacity: 1;
 }
@@ -710,6 +722,7 @@ body {
 }
 
 .min__max input {
+  width: 50px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -863,7 +876,8 @@ body {
 }
 
 .sorting__list-item:nth-child(4) {
-  margin-left: 450px;
+  margin-left: 440px;
+  margin-right: 10px;
 }
 
 .sorting__list-item-up:hover {
@@ -932,15 +946,18 @@ body {
 
 }
 
-.buildings__list-item a {
+.buildings__item-div {
+  width: 40%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.buildings__item-div a{  
   color: var(--basic-black);
   text-decoration: none;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .buildings__item-link:hover {
