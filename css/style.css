@@ -295,7 +295,19 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   border: none;
 }
 
-.form__searching {
+.form__searching-invisible {
+  display: none;
+  /*position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--basic-white);
+  padding-top: 55px;
+  padding-right: 34px;
+  padding-bottom: 55px;
+  padding-left: 34px;*/
+}
+.form__searching-visible {
+  display: block;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -305,7 +317,6 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   padding-bottom: 55px;
   padding-left: 34px;
 }
-
 .form__text {
   width: 125px;
   padding-top: 1px;
