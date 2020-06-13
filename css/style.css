@@ -1,4 +1,4 @@
-html {
+* {
   box-sizing: border-box;
 }
 
@@ -92,9 +92,9 @@ body {
 
 /*_____MAIN_____*/
 .welcome__sedona {
-  background-image: url("../img/main_background_new.png");
+  background-image: url("../img/background_new_photo.png");
+  background-color: var(--basic-more-darker-brown);
   background-repeat: no-repeat;
-  background-size: cover;
   width: 1200px;
   min-height: 725px;
   text-align: center;
@@ -105,10 +105,19 @@ body {
 }
 
 .welcome__sedona-info {
-  padding-top: 97px;
+  background-color: var(--basic-white);
+  margin-top: -10px;
+  padding-top: 44px;
+  padding-bottom: 54px;
 }
-
+.shape::before{
+  content: url("../img/shape.svg");
+}
+.shape{
+  margin-top: 15px;
+}
 .welcome__sedona-info h2 {
+  margin: 0;
   font-weight: bold;
   font-size: 21px;
   text-align: center;
@@ -116,7 +125,8 @@ body {
 }
 
 .welcome__sedona-info p {
-  padding-top: 25px;
+  margin: 0;
+  padding-top: 42px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-lighter-black);
@@ -140,9 +150,10 @@ body {
   flex-wrap: wrap;
   align-items: center;
   background-color: var(--basic-blue);
-  width: 297px;
+  width: 400px;
   text-align: center;
-  padding: 47px 51px 54px 52px;
+  padding: 47px 50px 50px 52px;
+  box-sizing: border-box;
 }
 
 .reasons__list-item--ranch {
@@ -164,6 +175,7 @@ body {
 .reasons__list-item h3 {
   width: 122px;
   margin-top: 0;
+  margin-bottom: 24px;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
@@ -173,13 +185,36 @@ body {
 }
 
 li:nth-of-type(2) .reasons__list-item--background h3 {
+  margin-top: 2px;
+  margin-bottom: 25px;
   width: 149px;
 }
-
+.first__reason::before{
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  left: -60%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-white);
+ 
+}
+.first__reason::after{
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  left: 116%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-white);
+ 
+}
 .reasons__list-item span,
 .reasons__list-item p {
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: -4px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -204,7 +239,7 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   background-image: url("../img/house.svg");
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 80px;
   width: 400px;
 }
@@ -213,7 +248,7 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   background-image: url("../img/food.svg");
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 80px;
   width: 400px;
 }
@@ -222,7 +257,7 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   background-image: url("../img/box.svg");
   background-repeat: no-repeat;
   background-position: top;
-  padding-top: 70px;
+  padding-top: 73px;
   padding-bottom: 80px;
   width: 400px;
 }
@@ -246,9 +281,94 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   text-transform: uppercase;
   color: var(--basic-lighter-black);
 }
+.second__reason{
 
+}
+.second__reason::before{
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  left: -60%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-white);
+ 
+}
+.second__reason::after{
+  content: " ";
+  position: absolute;
+  bottom: 10px;
+  left: 116%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-white);
+ 
+}
+.third__reason::before{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: -60%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
+.third__reason::after{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: 116%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
+
+.fourth__reason::before{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: -2%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
+.fourth__reason::after{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: 116%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
+
+.fifth__reason::before{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: -56%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
+.fifth__reason::after{
+  content: " ";
+  position: absolute;
+  bottom: 8px;
+  left: 80%;
+  width: 10px;
+  height: 1px;
+  background-color: var(--basic-lighter-black);
+ 
+}
 .reasons__list-item:nth-child(2) {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons__list-background--grey {
@@ -263,7 +383,7 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
 
 .reasons__list-item.reasons__list-background--grey span,
 .reasons__list-item.reasons__list-background--grey p {
-  padding-top: 23px;
+  padding-top: 20px;
   color: var(--basic-lighter-black);
 }
 
@@ -272,7 +392,24 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   text-align: center;
   padding: 47px 57px 54px 96px;
 }
-
+li:nth-of-type(4) h3{
+  padding-left: 12px;
+}
+li:nth-of-type(4) span{
+  padding-left: 18px;
+}
+li:nth-of-type(4) p{
+  padding-left: 16px;
+}
+li:nth-of-type(5) h3{
+  padding-right: 15px;
+}
+li:nth-of-type(5) span{
+  padding-right: 9px;
+}
+li:nth-of-type(5) p{
+  margin-left: -9px;
+}
 .form {
   position: relative;
 }
@@ -297,14 +434,6 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
 
 .form__searching-invisible {
   display: none;
-  /*position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: var(--basic-white);
-  padding-top: 55px;
-  padding-right: 34px;
-  padding-bottom: 55px;
-  padding-left: 34px;*/
 }
 .form__searching-visible {
   display: block;
@@ -318,9 +447,9 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
   padding-left: 34px;
 }
 .form__text {
-  width: 125px;
+  width: 116px;
+  padding-left: 10px;
   padding-top: 1px;
-  /*text-align: center;*/
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
@@ -343,6 +472,7 @@ input::placeholder {
   font-size: 14px;
   line-height: 26px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   text-transform: uppercase;
   color: var(--basic-black);
@@ -367,6 +497,7 @@ input::placeholder {
 
 .form__button-search:active {
   background-color: var(--basic-more-darker-brown);
+  
 }
 
 .form__button-search span:active,
@@ -382,6 +513,8 @@ input::placeholder {
 .input__check,
 .input__departure {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding-bottom: 30px;
 }
 
@@ -392,6 +525,8 @@ input::placeholder {
 .input__elders,
 .input__juniors {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
   padding-bottom: 54px;
 }
 
@@ -408,19 +543,10 @@ input::placeholder {
   padding-left: 66px;
 }
 
-/*.input__elders {
-  margin-right: 90px;
-}*/
-
-/*.input__elders .form__text,
-.input__juniors .form__text,
-.input__check .form__text,
-.input__departure .form__text {
-  padding-right: 11px;
-
-}*/
-
 .form__calendar {
+  position: absolute;
+  left:93%;
+  top: 9%;
   padding-top: 5px;
   width: 21px;
   height: 22px;
@@ -446,18 +572,19 @@ input::placeholder {
 
 .input__sing-in {
   display: flex;
+  flex-wrap: wrap;
+  position: relative;
   align-items: center;
-  width: 338px;
-  min-height: 38px;
+  width: 344px;
+  min-height: 37px;
   background-color: var(--basic-darker-white);
 }
 
 .form__sing-in-date,
-.form__sing-out-date {
-  width: 290px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-left: 13px;
+.form__sing-out-date {  
+  width: 100%;
+  padding-bottom: 10px;
+  padding-left: 14px;
 }
 
 .input__adult,
@@ -469,10 +596,6 @@ input::placeholder {
 .form__input-adult,
 .form__input-children {
   width: 28px;
-  /* padding-top: 6px;
-  padding-right: 6px;
-  padding-bottom: 6px;
-  padding-left: 10px;*/
   text-align: center;
 }
 
@@ -480,7 +603,11 @@ input::placeholder {
 .form__button-more {
   width: 30px;
 }
-
+.old_people-plus{
+  background-image: url("../img/rest_minus.svg");
+  width: 12px;
+  height: 3px;
+}
 .form__button-less,
 .form__input-adult,
 .form__button-more,

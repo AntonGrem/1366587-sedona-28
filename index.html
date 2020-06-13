@@ -35,6 +35,7 @@
   <main>
     <section class="welcome__sedona">
       <img src="img/welcome_sedona.svg" title="welcome to the gorgeous. Sedona" class="welcome__sedona-img">
+      <div class="shape"></div>
       <div class="welcome__sedona-info">
         <h2>Седона — небольшой городок в Аризоне,<br>
           заслуживающий большего!</h2>
@@ -46,7 +47,7 @@
         <li class="reasons__list-item">
           <div class="reasons__list-item--background">
             <h3>Настоящий городок</h3>
-            <span>-№1-</span>
+            <span class="first__reason"> №1 </span>
             <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="reasons__list-item--ranch"></div>
@@ -68,24 +69,25 @@
         <li class="reasons__list-item">
           <div class="reasons__list-item--canyon"></div>
           <div class="reasons__list-item--background">
-            <h3>Там есть Мост дьявола</h3>
-            <span>-№2-</span>
+            <h3>Там есть<br>
+               Мост дьявола</h3>
+            <span class="second__reason"> №2 </span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </li>
         <li class="reasons__list-item reasons__list-background--grey">
           <h3>Небольшая площадь</h3>
-          <span>-№3-</span>
+          <span class="third__reason"> №3 </span>
           <p>все достопримечательности<br> находятся очень близко</p>
         </li>
         <li class="reasons__list-item reasons__list-background--grey">
           <h3>Красивая дорога</h3>
-          <span>-№4-</span>
+          <span class="fourth__reason"> №4 </span>
           <p>ехать в седону из лас-вегаса совсем<br> не скучно!</p>
         </li>
         <li class="reasons__list-item reasons__list-background--grey">
           <h3>Мало туристов</h3>
-          <span>-№5-</span>
+          <span class="fifth__reason"> №5 </span>
           <p>большинство едет в гранд каньон<br> и толпится там</p>
         </li>
       </ul>
@@ -119,7 +121,8 @@
             <div class="input__elders">
               <label for="old_people_id" class="form__text">Взрослые:</label>
               <div class="input__adult">
-                <input type="button" value="-" class="form__button-less"> <input type="text" name="old_people"
+                <button type="button" class="old_people-plus"></button>
+                <input type="text" name="old_people"
                   id="old_people_id" value="2" class="form__input-adult" required> <input type="button" value="+"
                   class="form__button-more">
               </div>
