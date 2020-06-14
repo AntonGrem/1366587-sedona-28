@@ -101,7 +101,7 @@
           </fieldset>
           <div class="choice__third">
             <fieldset claas="filter__price">
-              <legend class="choice__headline">Стоимость в сутки(Р):</legend>
+              <legend class="choice__filter-headline">Стоимость в сутки (Р):</legend>
               <div class="min__max">
                 <label class="min__price">
                   <span class="choice__text"> от</span>
@@ -115,10 +115,10 @@
               </div>
               <div class="range__controls">
                 <div class="scale">
-                  <div class="bar" style=" width: 30%; margin-left: 20%"></div>
+                  <div class="bar"></div>
                 </div>
-                <div class="toggle toggle__min" tabindex="0" style="left: 20%"></div>
-                <div class="toggle toggle__max" tabindex="0" style="left: 50%"></div>
+                <div class="toggle toggle__min" tabindex="0"></div>
+                <div class="toggle toggle__max" tabindex="0"></div>
               </div>
             </fieldset>
             <input type="submit" name="show_results" value="Показать" class="choice__result">
@@ -129,9 +129,11 @@
       <section class="sorting">
         <div class="sorting__find--div">
           <span class="sorting__find">Найдено: <output name="find_results" class="sorting__find">3</output></span>
-          <span class="sorting__text">Сортировка:</span>
         </div>
         <ul class="sorting__list">
+          <li>
+            <span class="sorting__text">Сортировка:</span>
+          </li>
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по цене"><span class="sorting__list-item-cost">По цене</span></a>
           </li>
@@ -141,14 +143,14 @@
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по рейтенгу"><span class="sorting__list-item-cost">По рейтенгу</span></a>
           </li>
-          <li class="sorting__list-item">
+          <li class="sorting__list-item sorting__list-item-up">
             <a href="#" title="Сортировка по возрастанию">
-              <div class="sorting__list-item-up"></div>
+              <!--<div class="sorting__list-item-up"></div>-->
             </a>
           </li>
-          <li class="sorting__list-item">
+          <li class="sorting__list-item sorting__list-item-down">
             <a href="#" title="Сортировка по убыванию">
-              <div class="sorting__list-item-down"></div>
+              <!--<div class="sorting__list-item-down"></div>-->
             </a>
           </li>
         </ul>
@@ -157,7 +159,8 @@
         <ul class="buildings__list">
           <li class="buildings__list-item">
             <div class="buildings__img">
-              <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa.">
+              <img src="img/amara_resort_spa.png" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa."
+                style="max-width: 100%; height: auto;">
             </div>
             <div class="buildings__item-info">
               <div class="buildings__item-div">
@@ -169,10 +172,10 @@
               </div>
               <div class="buildings__links">
                 <div class="buildings__links-details">
-                  <a href="#" title="Подробная информация"><span>Подробнее</span></a>
+                  <a href="#" title="Подробная информация"><span class="details">Подробнее</span></a>
                 </div>
                 <div class="buildings__links-book">
-                  <a href="#" title="Забронироваь"><span>Забронировать</span></a>
+                  <a href="#" title="Забронироваь"><span class="book">Забронировать</span></a>
                 </div>
               </div>
             </div>
@@ -188,7 +191,8 @@
           </li>
           <li class="buildings__list-item">
             <div class="buildings__img">
-              <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn.">
+              <img src="img/desert_quail_lnn.png" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn."
+                style="max-width: 100%; height: auto;">
             </div>
             <div class="buildings__item-info">
               <div class="buildings__item-div">
@@ -200,10 +204,10 @@
               </div>
               <div class="buildings__links">
                 <div class="buildings__links-details">
-                  <a href="#" title="Подробная информация"><span>Подробнее</span></a>
+                  <a href="#" title="Подробная информация"><span class="details">Подробнее</span></a>
                 </div>
                 <div class="buildings__links-book">
-                  <a href="#" title="Забронироваь"><span>Забронировать</span></a>
+                  <a href="#" title="Забронироваь"><span class="book">Забронировать</span></a>
                 </div>
               </div>
             </div>
@@ -219,7 +223,8 @@
 
           <li class="buildings__list-item">
             <div class="buildings__img">
-              <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo.">
+              <img src="img/villas_at_poco_diablo.png" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo."
+                style="max-width: 100%; height: auto;">
             </div>
             <div class="buildings__item-info">
               <div class="buildings__item-div">
@@ -231,10 +236,10 @@
               </div>
               <div class="buildings__links">
                 <div class="buildings__links-details">
-                  <a href="#" title="Подробная информация"><span>Подробнее</span></a>
+                  <a href="#" title="Подробная информация"><span class="details">Подробнее</span></a>
                 </div>
                 <div class="buildings__links-book">
-                  <a href="#" title="Забронироваь"><span>Забронировать</span></a>
+                  <a href="#" title="Забронироваь"><span class="book">Забронировать</span></a>
                 </div>
               </div>
             </div>
@@ -260,19 +265,16 @@
       </section>
       <section class="social">
         <ul class="social__list">
-          <li class="social__list-item">
+          <li class="social__list-item social__twitter">
             <a href="#" title="Переход в Twitter">
-              <div class="social__twitter"></div>
             </a>
           </li>
-          <li class="social__list-item">
+          <li class="social__list-item social__facebook">
             <a href="#" title="Переход в Facebook">
-              <div class="social__facebook"></div>
             </a>
           </li>
-          <li class="social__list-item">
+          <li class="social__list-item social__youtube">
             <a href="#" title="Переход в YouTube">
-              <div class="social__youtube"></div>
             </a>
           </li>
         </ul>
