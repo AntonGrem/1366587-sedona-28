@@ -75,11 +75,10 @@ body {
 
 .menu__list-item a {
   text-decoration: none;
-}
-
-.menu__list-item a:link {
   color: var(--basic-black);
 }
+
+
 
 .menu__list-item a:hover {
   color: var(--basic-blue);
@@ -812,14 +811,11 @@ input::placeholder {
 }
 
 .social__facebook {
-  background-image: url("../img/rest_facebook.svg");
-  background-color: var(--basic-blue);
-  width: 46px;
-  min-height: 48px;
+  background-color: var(--basic-blue);  
 }
 
 .social__facebook:hover {
-  background-image: url("../img/guidance_facebook.svg");
+  background-color: var(--basic-darker-blue);
 }
 
 .social__facebook:active {
