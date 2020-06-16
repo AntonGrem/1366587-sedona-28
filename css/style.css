@@ -744,7 +744,11 @@ svg:active .svg__calendar{
   opacity: 0.3;
 }
 
-
+.map{
+  background-image: url("../img/map.png");
+  height: 475px;
+  margin-bottom: 7px;
+}
 /*_____FOOTER_____*/
 .footer {
   display: grid;
