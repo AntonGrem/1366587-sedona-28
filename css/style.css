@@ -396,6 +396,7 @@ li:nth-of-type(2) .reasons__list-item--background h3 {
 
 .reasons__list-item.reasons__list-background--grey {
   display: inline-block;
+  vertical-align: top;
   text-align: center;
   padding: 47px 57px 54px 96px;
 }
@@ -1027,6 +1028,7 @@ fieldset.choice__second {
 
 .fake__checkbox {
   display: inline-block;
+  vertical-align: top;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox_off.svg");
@@ -1038,6 +1040,7 @@ fieldset.choice__second {
   content: "";
   position: absolute;
   display: inline-block;
+  vertical-align: top;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox_on.svg");
