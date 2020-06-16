@@ -1287,7 +1287,8 @@ svg:active .svg__down{
 
 .buildings__img {
   margin-right: 29px;
-  width: 135px;
+  max-width: 135px;
+  height: auto;
 }
 
 .buildings__list {
@@ -1365,15 +1366,6 @@ svg:active .svg__down{
   opacity: 0.3;
 }
 
-/*.buildings__list-item span {
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  padding-top: 3px;
-  padding-right: 10px;
-  padding-bottom: 3px;
-  padding-left: 21px;
-}*/
 .buildings__text-buildnig,
 .buildings__text-price{
   font-size: 14px;
