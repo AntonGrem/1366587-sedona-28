@@ -1,4 +1,4 @@
-var buttonSearchForm = document.querySelector(".form__button-search");
+var buttonSearchForm = document.querySelector(".form__link-search");
 var formSearching = document.querySelector(".form__searching-invisible");
 var formButtonFind = document.querySelector(".form__button-find");
 
