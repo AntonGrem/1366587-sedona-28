@@ -1291,7 +1291,7 @@ svg:active .svg__down{
 .buildings__img {
   margin-right: 29px;
   max-width: 135px;
-  height: auto;
+  max-height: 90px;
 }
 
 .buildings__list {
