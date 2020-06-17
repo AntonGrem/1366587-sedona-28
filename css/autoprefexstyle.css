@@ -979,10 +979,10 @@ svg:active .svg__calendar{
   padding-bottom: 5px;
 }
 
-.develop__htmlacademy-link svg:hover{
+.htmlacademy__svg:hover path{
   fill: var(--basic-blue);
 }
-.develop__htmlacademy-link svg:active {
+.htmlacademy__svg:active path {
   fill: var(--basic-grey-gery);
 }
 
