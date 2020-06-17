@@ -743,6 +743,14 @@ svg:active .svg__calendar{
   border: 2px solid var(--basic-more-darker-whire);
   outline: none;
 }
+.form__sing-in-date:focus,
+.form__sing-out-date:focus,
+.form__input-adult:focus,
+.form__input-children:focus {
+  background-color: var(--basic-white);
+  border: 2px solid var(--basic-more-darker-whire);
+  outline: none;
+}
 
 .form__button-find {
   background-color: var(--basic-blue);
