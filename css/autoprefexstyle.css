@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 *, *::before, *::after  {
   box-sizing: border-box;
 }
@@ -496,6 +503,22 @@ body {
   text-transform: uppercase;
 }
 
+.form__sing-in-date::-webkit-input-placeholder, .form__sing-out-date::-webkit-input-placeholder, .form__input-adult::-webkit-input-placeholder, .form__input-children::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;  
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.form__sing-in-date::-moz-placeholder, .form__sing-out-date::-moz-placeholder, .form__input-adult::-moz-placeholder, .form__input-children::-moz-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;  
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
 .form__sing-in-date::placeholder,
 .form__sing-out-date::placeholder,
 .form__input-adult::placeholder,
@@ -585,9 +608,9 @@ body {
 
 .form__calendar {
   position: absolute;
-  left: 89%;
-  top: 0%;
-  padding-top: 5px;
+  top: 50%;
+  right: 10px;
+  margin-top: -13px;
   width: 21px;
   height: 23px;  
   border: none;
@@ -699,6 +722,7 @@ svg:active .svg__calendar{
 .form__sing-out-date,
 .form__input-adult,
 .form__input-children {
+  line-height: 26px;
   background-color: var(--basic-darker-white);
   outline: none;
 }
