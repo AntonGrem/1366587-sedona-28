@@ -616,10 +616,16 @@ body {
   border: none;
   outline: none;
 }
-svg:hover .svg__calendar{
+.svg__calendar:hover path{
   fill: var(--basic-black);
 }
-svg:active .svg__calendar{
+.svg__calendar:active path{
+  fill: var(--basic-blue);
+}
+.svg__calendar:hover rect{
+  fill: var(--basic-black);
+}
+.svg__calendar:active rect{
   fill: var(--basic-blue);
 }
 .form__calendar:hover {
