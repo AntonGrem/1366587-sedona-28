@@ -91,7 +91,7 @@
               <li class="choice__list-item">
                 <label for="apartments_id" class="choice__text" tabindex="0">
                   <span class="choice__div">
-                    <input type="checkbox" name="apartments" id="apartments_id" checked class="real__checkbox">
+                    <input type="checkbox" name="apartments" id="apartments_id"  class="real__checkbox">
                     <span class="fake__checkbox"></span>
                     <span class="choice__div-text"> Апартаменты</span>
                   </span>
@@ -105,7 +105,7 @@
               <div class="min__max">
                 <label class="min__price" tabindex="0">
                   <span class="choice__text"> от</span>
-                  <input type="number" name="min__price" value="0" class="min__price-input">
+                  <input type="number" name="min__price" value="0" class="min__price-input" >
                 </label>
                 <div class="delimiter"></div>
                 <label class="max__price" tabindex="0">
@@ -117,8 +117,16 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle__min" tabindex="0"></div>
-                <div class="toggle toggle__max" tabindex="0"></div>
+                <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle toggle__min" tabindex="0">
+                  <path opacity="0.3" d="M9.5 19.0909C4.25315 19.0909 0 14.8164 0 9.54544V11.4545C0 16.7255 4.25315 21 9.5 21C14.7459 21 19 16.7255 19 11.4545V9.54544C19 14.8164 14.7459 19.0909 9.5 19.0909Z" fill="#ABABAB"/>
+                  <path d="M9.5 19.0909C14.7467 19.0909 19 14.8173 19 9.54545C19 4.27365 14.7467 0 9.5 0C4.25329 0 0 4.27365 0 9.54545C0 14.8173 4.25329 19.0909 9.5 19.0909Z" fill="white"/>
+                  <path d="M9.49998 11.4545C10.5493 11.4545 11.4 10.5998 11.4 9.54544C11.4 8.49108 10.5493 7.63635 9.49998 7.63635C8.45063 7.63635 7.59998 8.49108 7.59998 9.54544C7.59998 10.5998 8.45063 11.4545 9.49998 11.4545Z" fill="#ABABAB"/>
+                  </svg>
+                  <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="toggle toggle__max" tabindex="0">
+                    <path opacity="0.3" d="M9.5 19.0909C4.25315 19.0909 0 14.8164 0 9.54544V11.4545C0 16.7255 4.25315 21 9.5 21C14.7459 21 19 16.7255 19 11.4545V9.54544C19 14.8164 14.7459 19.0909 9.5 19.0909Z" fill="#ABABAB"/>
+                    <path d="M9.5 19.0909C14.7467 19.0909 19 14.8173 19 9.54545C19 4.27365 14.7467 0 9.5 0C4.25329 0 0 4.27365 0 9.54545C0 14.8173 4.25329 19.0909 9.5 19.0909Z" fill="white"/>
+                    <path d="M9.49998 11.4545C10.5493 11.4545 11.4 10.5998 11.4 9.54544C11.4 8.49108 10.5493 7.63635 9.49998 7.63635C8.45063 7.63635 7.59998 8.49108 7.59998 9.54544C7.59998 10.5998 8.45063 11.4545 9.49998 11.4545Z" fill="#ABABAB"/>
+                    </svg>
               </div>
             </fieldset>
             <input type="submit" name="show_results" value="Показать" class="choice__result">
@@ -163,7 +171,7 @@
       <section class="buildings">
         <ul class="buildings__list">
           <li class="buildings__list-item">
-            <div>
+            <div class = "buildings__picture">
               <img src="img/amara_resort_spa.jpg" alt="Горы, лужайка, бассейн, дом. Гостиница Amara Resort & Spa."
                  class="buildings__img" width= "135" height = "90">
             </div>
@@ -195,13 +203,13 @@
             </div>
           </li>
           <li class="buildings__list-item">
-            <div>
+            <div class = "buildings__picture">
               <img src="img/desert_quail_lnn.jpg" alt="Здание, дорога, вывеска.Мотель Desert Quail Inn."
                 class="buildings__img" width= "135" height = "90">
             </div>
             <div class="buildings__item-info">
               <div class="buildings__item-div">
-                <a href="#" title="Desert Quail Inn" class="buildings__item-link" aria-label = "Переход на старницу с информацией о строении">Desert QuailInn</a>
+                <a href="#" title="Desert Quail Inn" class="buildings__item-link" aria-label = "Переход на старницу с информацией о строении">Desert Quail  Inn</a>
               </div>
               <div class="buildings__text">
                 <span class="buildings__text-buildnig">Мотель</span>
@@ -227,10 +235,10 @@
           </li>
 
           <li class="buildings__list-item">
-            <div>
+            <div class = "buildings__picture">
               <img src="img/villas_at_poco_diablo.jpg" alt="Трава, деревья, дом. Аппартаменты Villas at Poco Diablo."
                 class="buildings__img" width= "135" height = "90">
-            </div>
+            </div >
             <div class="buildings__item-info">
               <div class="buildings__item-div">
                 <a href="#" title="Villas at Poco Diablo" class="buildings__item-link" aria-label = "Переход на старницу с информацией о строении">Villas at Poco Diablo</a>

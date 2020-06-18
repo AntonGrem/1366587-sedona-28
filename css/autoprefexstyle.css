@@ -543,12 +543,12 @@ body {
 }
 
 
-.form__button-search:hover {
+.form__link-search:hover {
   background-color: var(--basic-darker-brown);
   outline: none;
 }
 
-.form__button-search:active {
+.form__link-search:active {
   background-color: var(--basic-more-darker-brown);
   outline: none;
 
@@ -607,6 +607,7 @@ body {
 }
 
 .form__calendar {
+  background: none;
   position: absolute;
   top: 50%;
   right: 10px;
@@ -1105,19 +1106,23 @@ fieldset.choice__second {
   opacity: 0;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.min__price-input::-webkit-outer-spin-button,
+.min__price-input::-webkit-inner-spin-button,
+.max__price-input::-webkit-outer-spin-button,
+.max__price-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number] {
+.min__price-input[type=number],
+.max__price-input[type=number] {
   -moz-appearance: textfield;
 }
 
 .real__checkbox:checked+.fake__checkbox::before {
   opacity: 1;
 }
+
 
 .choice__filter-headline {
   font-weight: bold;
@@ -1147,11 +1152,15 @@ input[type=number] {
 }
 
 .min__price {
-  margin-left: 37px;
+  padding-top: 4px;
+  margin-left: 38px;
+  line-height: 21px;
 }
 
 .max__price {
+  padding-top: 3px;
   margin-right: 7px;
+  line-height: 21px;
 }
 
 .min__max input {
@@ -1196,11 +1205,8 @@ input[type=number] {
 .range__controls .toggle {
   position: absolute;
   top: -9px;
-  left: 0;
-  width: 19px;
-  height: 21px;
-  padding: 0;
-  background-image: url("../img/rest_toggle.svg");
+  left: 0;  
+  padding: 0;  
   cursor: pointer;
 }
 
@@ -1214,9 +1220,7 @@ input[type=number] {
 
 .range__controls .toggle__min:hover,
 .range__controls .toggle__max:hover {
-  width: 23px;
-  height: 24px;
-  background-image: url("../img/guidance_toggle.svg");
+  transform: scale(1.3);
 }
 
 .choice__result {
@@ -1292,7 +1296,7 @@ input[type=number] {
 }
 
 .sorting__list li:nth-of-type(6) {
-  margin-right: 72px;
+  padding-right: 72px;
   margin-left: 12px;
   margin-top: 4px;
 }
@@ -1331,6 +1335,13 @@ input[type=number] {
   border-bottom: none;
   opacity: 1;
 }
+.sorting__list-item .sorting__list-item-cost:focus,
+.sorting__list-item .sorting__list-item-type:focus,
+.sorting__list-item .sorting__list-item-rait:focus {
+  color: var(--basic-blue);
+  border-bottom: none;
+  opacity: 1;
+}
 
 svg:hover .svg__up{
   fill: var(--basic-black);
@@ -1345,7 +1356,9 @@ svg:active .svg__down{
   fill: var(--basic-blue);
 }
 
-.buildings__img {
+.buildings__picture {
+  width: 135px;
+  height: 90px;
   margin-right: 29px;
 }
 
@@ -1353,7 +1366,7 @@ svg:active .svg__down{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-left: 72px;
+  padding-left: 72px;
   padding-top: 33px;
 }
 
@@ -1361,15 +1374,15 @@ svg:active .svg__down{
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 21px;
-  padding-top: 23px;
+  padding-top: 27px;
   border-bottom: 1px solid var(--basic-lighter-grey);
 }
 
 .buildings__item-info {
+  width: 300px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: space-around;
   margin-top: -11px;
 }
@@ -1378,7 +1391,7 @@ svg:active .svg__down{
 .buildings__links {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .buildings__text {
@@ -1389,8 +1402,10 @@ svg:active .svg__down{
 .stars {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-end;
   padding-right: 55px;
 }
 
@@ -1398,10 +1413,10 @@ svg:active .svg__down{
   text-align: right;
   padding-right: 19px;
   margin-top: -4px;
+  margin-bottom: 41px;
 }
 
 .buildings__item-div {
-  width: 40%;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1518,13 +1533,11 @@ span.book {
 li:nth-of-type(1).buildings__list-item {
   border-top: 1px solid var(--basic-lighter-grey);
 }
+
 li:nth-of-type(2).buildings__list-item {
   padding-top: 32px;
 }
 
 li:nth-of-type(3).buildings__list-item {
   padding-top: 32px;
-}
-.buildings{
-  margin-bottom: 8px;
 }
