@@ -146,6 +146,8 @@ body {
 }
 
 .reasons__list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0;
   padding-left: 0;
   list-style-type: none;
@@ -411,10 +413,9 @@ body {
 }
 
 .reasons__list-item.reasons__list-background--grey {
-  display: inline-block;
   vertical-align: top;
   text-align: center;
-  padding: 47px 57px 54px 96px;
+  padding: 47px 57px 62px 96px;
 }
 
 .road h3 {
@@ -453,37 +454,33 @@ body {
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;  
-  position: absolute;
-  top: 58%;
-  margin-left: 314px;
+  margin: 0 auto;
   display: block;
   width: 568px;
-  height: 86px;
   padding-top: 30px;
+  padding-bottom: 30px;
   border: none;
   outline: none;
 }
 
 .form__searching-invisible {
   display: none;
+  height: 0;
 }
 
 .form__searching-visible {
   display: block;
-  position: absolute;  
-  width: 568px;
-  height: 395px;
-  top: 84%;
-  margin-left: 314px;  
-  padding-top: 55px;  
-  padding-bottom: 47px;
-  padding-left: 29px;
+  position: absolute; 
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%); 
+  padding: 55px;  
   background-color: var(--basic-white);
+  animation: bounce  1s ;
 }
 
 .form__text {
-  width: 116px;
-  padding-left: 13px;
+  width: 113px;
   padding-top: 2px;
   margin-right: 1px;
   font-weight: bold;
@@ -494,8 +491,8 @@ body {
 
 .form h2 {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 44px;
+  margin-bottom: 33px;
+  padding-top: 39px;
   font-weight: bold;
   font-size: 30px;
   line-height: 24px;
@@ -532,9 +529,7 @@ body {
 
 .form p {
   margin-top: 0;
-  margin-bottom: -53px;
-  padding-top: 30px;
-  padding-bottom: 187px;
+  margin-bottom: 44px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -565,8 +560,6 @@ body {
   border: none;
   padding: 0;
   margin: 0;
-  padding-left: 15px;
-  padding-top: 1px;
 }
 
 .input__check,
@@ -592,13 +585,13 @@ body {
 }
 
 .input__elders .form__text {
-  margin-right: 28px;
-  padding-right: 25px;
+  margin-right: 14px;
   width: 100px;
 }
 
 .input__juniors .form__text {
   width: 68px;
+  padding-left: 13px;
   margin-right: 10px;
 }
 
@@ -643,7 +636,6 @@ body {
   flex-wrap: wrap;
   position: relative;
   align-items: center;
-  margin-left: 12px;
   width: 344px;
   min-height: 37px;
   background-color: var(--basic-darker-white);
@@ -653,11 +645,13 @@ body {
 .form__sing-out-date {
   width: 100%;
   padding-bottom: 8px;
-  padding-left: 7px;
+  padding-left: 8px;
+  padding-right: 25px;
 }
 
 .input__adult,
 .input__children {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   width: 114px;
@@ -683,39 +677,55 @@ body {
 }
 
 .input__adult .people__plus {
-  align-self: center; 
-  margin-left: 13px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
 }
 
 .input__adult .people__minus {
-  align-self: center;
-  margin-left: 4px;
-  margin-bottom: 7px;
-  margin-right: 4px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 4px  
 }
 
 .input__adult .form__input-adult {
+  width: 100%;
   margin-bottom: 5px;
-  padding-left: 8px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-right: 26px;
+  padding-left: 24px;
 }
 
 .input__children .people__plus {
-  align-self: center;
-  margin-left: 13px;
-  margin-bottom: 5px;
-  padding-right: 5px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
 }
 
 .input__children .people__minus {
-  align-self: center;
-  margin-left: 7px;
-  margin-bottom: 9px;
-  margin-right: 6px;
+  background: none;
+  border: none;
+  position: absolute;
+  top: 5px;
+  left: 7px 
 }
 
 .input__children .form__input-children {
+  width: 100%;
   margin-bottom: 5px;
-  padding-left: 8px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-right: 26px;
+  padding-left: 24px;
 }
 
 .form__input-adult,
@@ -764,8 +774,9 @@ body {
   border: none;
   outline: none;
   width: 458px;
-  height: 58px;
-  margin-left: 12px;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .form__button-find span {
@@ -1540,4 +1551,21 @@ li:nth-of-type(2).buildings__list-item {
 
 li:nth-of-type(3).buildings__list-item {
   padding-top: 32px;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

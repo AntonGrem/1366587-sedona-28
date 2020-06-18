@@ -2,6 +2,8 @@ var buttonSearchForm = document.querySelector(".form__link-search");
 var formSearching = document.querySelector(".form__searching-visible");
 var formButtonFind = document.querySelector(".form__button-find");
 
+ formSearching.className = "form__searching-invisible";
+
 buttonSearchForm.addEventListener("click", function(event){
     event.preventDefault()
     if (formSearching.classList.contains("form__searching-visible")){
