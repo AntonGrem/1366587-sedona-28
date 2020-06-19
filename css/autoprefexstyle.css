@@ -1420,7 +1420,7 @@ svg:active .svg__down{
 }
 
 .buildings__item-info {
-  width: 300px;
+  width: 500px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -1584,9 +1584,9 @@ li:nth-of-type(3).buildings__list-item {
 }
 @keyframes bounce {
   0% {
-    transform: translateY(-50px);
+    transform: translateY(-50px) translateX(-50%);
   }
   100% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(-50%);
   }
 }
