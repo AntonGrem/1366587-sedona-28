@@ -26,8 +26,8 @@
           <li class="menu__list-item">
             <a href="#" class="menu__list-link" aria-label = "Карта штата">Карта штата</a>
           </li>
-          <li class="menu__list-item">
-            <a href="hotels.html" title="Переход на страницу Гостиницы." class="menu__list-link" aria-label = "Гостиницы">Гостиницы</a>
+          <li class="menu__list-item menu__list-item--active">
+            <a href="hotels.html" title="Переход на страницу Гостиницы." class="menu__list-link " aria-label = "Гостиницы">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@
               <li class="choice__list-item">
                 <label for="parking_id" class="choice__text" tabindex="0">
                   <span class="choice__div">
-                    <input type="checkbox" name="parking" id="parking_id"  disabled class="real__checkbox">
+                    <input type="checkbox" name="parking" id="parking_id"  disabled  checked class="real__checkbox">
                     <span class="fake__checkbox"></span>
                     <span class="choice__div-text">Паркова</span>
                   </span>
@@ -143,7 +143,7 @@
             <span class="sorting__text">Сортировка:</span>
           </li>
           <li class="sorting__list-item">
-            <a href="#" title="Сортировка по цене" aria-label = "Сортировка по цене"><span class="sorting__list-item-cost" >По цене</span></a>
+            <a href="#" title="Сортировка по цене" aria-label = "Сортировка по цене"><span class="sorting__list-item-cost sorting__list-item-active" >По цене</span></a>
           </li>
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по типу" aria-label = "Сортировка по типу"><span class="sorting__list-item-cost">По типу</span></a>
@@ -151,20 +151,23 @@
           <li class="sorting__list-item">
             <a href="#" title="Сортировка по рейтенгу" aria-label = "Сортировка по рейтенгу"><span class="sorting__list-item-cost">По рейтенгу</span></a>
           </li>
-          <li class="sorting__list-item triangle">
+          <li class="sorting__list-item">
+          <ul class="sorting__sublist">
+          <li class="sorting__sublist-item triangle">
             <a href="#" title="Сортировка по возрастанию">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class = "svg__up" d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
                 </svg>
             </a>
           </li>
-          <li class="sorting__list-item triangle">
+          <li class="sorting__sublist-item triangle">
             <a href="#" title="Сортировка по убыванию">
               <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class = "svg__down" d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
-                </svg>
-                
+                </svg>                
             </a>
+          </li>
+          </ul>
           </li>
         </ul>
       </section>

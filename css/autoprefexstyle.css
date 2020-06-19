@@ -90,8 +90,6 @@ body {
   color: var(--basic-black);
 }
 
-
-
 .menu__list-item a:hover {
   color: var(--basic-blue);
 }
@@ -100,7 +98,12 @@ body {
   color: var(--basic-black);
   opacity: 0.3;
 }
-
+.menu__list-item--active{
+  color: var(--basic-brown);
+}
+.menu__list-item--active a{
+  color: var(--basic-brown);
+}
 /*_____MAIN_____*/
 .welcome__sedona {
   background-image: url("../img/background_new_photo.png");
@@ -413,9 +416,10 @@ body {
 }
 
 .reasons__list-item.reasons__list-background--grey {
+  width: 400px;
   vertical-align: top;
   text-align: center;
-  padding: 47px 57px 62px 96px;
+  padding: 47px 57px 60px 48px;
 }
 
 .road h3 {
@@ -430,9 +434,9 @@ body {
   padding-left: 16px;
 }
 
-.tourists h3 {
+/*.tourists h3 {
   padding-right: 15px;
-}
+}*/
 
 .tourists span {
   padding-right: 9px;
@@ -472,11 +476,11 @@ body {
   display: block;
   position: absolute; 
   top: 100%;
-  left: 50%;
-  transform: translateX(-50%); 
+  transform: translateX(-50%);
+  left: 50%; 
   padding: 55px;  
   background-color: var(--basic-white);
-  animation: bounce  1s ;
+  animation: bounce  2s ;
 }
 
 .form__text {
@@ -739,6 +743,8 @@ body {
 .form__sing-out-date,
 .form__input-adult,
 .form__input-children {
+  font-weight: bold;
+  font-size: 14px;
   line-height: 26px;
   background-color: var(--basic-darker-white);
   outline: none;
@@ -807,7 +813,7 @@ body {
 .map{
   background-image: url("../img/map.png");
   height: 594px;
-  margin-bottom: -121px;
+  margin-bottom: -118px;
 }
 /*_____FOOTER_____*/
 .footer {
@@ -817,7 +823,7 @@ body {
   display: grid;
   align-items: center;
   padding-bottom: 27px;
-  padding-top: 22px;
+  padding-top: 19px;
 }
 
 .contacts {
@@ -1130,10 +1136,16 @@ fieldset.choice__second {
   -moz-appearance: textfield;
 }
 
-.real__checkbox:checked+.fake__checkbox::before {
-  opacity: 1;
+.real__checkbox:checked+.fake__checkbox {
+  background-image: url("../img/checkbox_on.svg");
 }
-
+.real__checkbox:disabled+.fake__checkbox {
+  background-image: url("../img/checkbox-off-disabled.svg");
+}
+.real__checkbox:disabled:checked+.fake__checkbox {
+  background-image: url("../img/checkbox-on-disabled.svg");
+  opacity: 2;
+}
 
 .choice__filter-headline {
   font-weight: bold;
@@ -1260,7 +1272,8 @@ fieldset.choice__second {
 
 .sorting__list {
   margin: 0;
-  padding: 0;
+  padding: 0;  
+  margin-right: 73px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
@@ -1290,23 +1303,23 @@ fieldset.choice__second {
   text-transform: uppercase;
 }
 
-.sorting__list li:nth-of-type(1) {
-  padding-right: 38px;
+.sorting__list li:nth-child(1) {
+  margin-right: 38px;
 }
 
-.sorting__list li:nth-of-type(2) {
-  padding-right: 34px;
+.sorting__list li:nth-child(2) {
+  margin-right: 34px;
 }
 
-.sorting__list li:nth-of-type(3) {
-  padding-right: 16px;
+.sorting__list li:nth-child(3) {
+  margin-right: 34px;
 }
 
-.sorting__list li:nth-of-type(4) {
+.sorting__list li:nth-child(4) {
   flex-grow: 1;
 }
 
-.sorting__list li:nth-of-type(6) {
+/*.sorting__list li:nth-of-type(6) {
   padding-right: 72px;
   margin-left: 12px;
   margin-top: 4px;
@@ -1316,6 +1329,21 @@ fieldset.choice__second {
 }
 .sorting__list li:nth-of-type(5) {
   margin-top: 4px;
+}*/
+.sorting__sublist{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sorting__sublist li:nth-child(1) {
+  margin-right: 12px;
+  margin-top: 4px;
+}
+.sorting__sublist li:nth-child(2) {
+  margin-top: 4px;
+  margin-right: auto;
 }
 
 .sorting__list-item .sorting__list-item-cost,
@@ -1346,9 +1374,12 @@ fieldset.choice__second {
   border-bottom: none;
   opacity: 1;
 }
-.sorting__list-item .sorting__list-item-cost:focus,
-.sorting__list-item .sorting__list-item-type:focus,
-.sorting__list-item .sorting__list-item-rait:focus {
+.sorting__list-item-active {
+  color: var(--basic-blue);
+  border-bottom: none;
+  opacity: 1;
+}
+.sorting__list-item-cost.sorting__list-item-active{
   color: var(--basic-blue);
   border-bottom: none;
   opacity: 1;
@@ -1556,15 +1587,6 @@ li:nth-of-type(3).buildings__list-item {
   0% {
     transform: translateY(-50px);
   }
-
-  70% {
-    transform: translateY(30px);
-  }
-
-  90% {
-    transform: translateY(-10px);
-  }
-
   100% {
     transform: translateY(0);
   }
