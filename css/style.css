@@ -12,7 +12,6 @@
 }
 
 html {
-
   background-color: var(--basic-darker-white);
 }
 
@@ -113,7 +112,7 @@ body {
 
 /*_____MAIN_____*/
 .welcome__sedona {
-  background-image: url("../img/background_new_photo.png");
+  background-image: url("../img/background_new_photo.jpg");
   background-color: var(--basic-more-darker-brown);
   background-repeat: no-repeat;
   width: 1200px;
@@ -162,6 +161,7 @@ body {
   padding-left: 0;
   list-style-type: none;
   background-color: var(--basic-grey);
+  margin-bottom: 12px;
 }
 
 .reasons__list-item:first-child {
@@ -342,7 +342,7 @@ body {
   content: " ";
   position: absolute;
   bottom: 8px;
-  left: -60%;
+  left: -14%;
   width: 10px;
   height: 1px;
   background-color: var(--basic-lighter-black);
@@ -385,8 +385,8 @@ body {
 .fifth__reason::before {
   content: " ";
   position: absolute;
-  bottom: 8px;
-  left: -56%;
+  bottom: 7px;
+  left: -1%;
   width: 10px;
   height: 1px;
   background-color: var(--basic-lighter-black);
@@ -396,8 +396,8 @@ body {
 .fifth__reason::after {
   content: " ";
   position: absolute;
-  bottom: 8px;
-  left: 80%;
+  bottom: 7px;
+  right: -12px;
   width: 10px;
   height: 1px;
   background-color: var(--basic-lighter-black);
@@ -413,23 +413,35 @@ body {
   background-color: var(--basic-grey);
 }
 
-.reasons__list-item.reasons__list-background--grey h3 {
+.reasons__list-background--grey h3 {
   margin: 0 auto;
   padding-bottom: 23px;
   color: var(--basic-black);
 }
 
-.reasons__list-item.reasons__list-background--grey span,
-.reasons__list-item.reasons__list-background--grey p {
-  padding-top: 20px;
+.reasons__list-background--grey span,
+.reasons__list-background--grey p {
+  padding-top: 22px;
   color: var(--basic-lighter-black);
 }
 
-.reasons__list-item.reasons__list-background--grey {
+.reasons__list-background--grey {
   width: 400px;
   vertical-align: top;
   text-align: center;
   padding: 47px 57px 60px 48px;
+}
+
+.third__reason {
+  padding-left: 11px;
+}
+
+.third__reason-p {
+  padding-left: 8px;
+}
+
+.fifth__reason-p {
+  padding-left: 19px;
 }
 
 .road h3 {
@@ -445,7 +457,7 @@ body {
 }
 
 .tourists span {
-  padding-right: 9px;
+  padding-left: 15px;
 }
 
 .tourists p {
@@ -556,6 +568,28 @@ body {
   color: var(--basic-black);
 }
 
+.form__sing-in-date::-webkit-input-placeholder,
+.form__sing-out-date::-webkit-input-placeholder,
+.form__input-adult::-webkit-input-placeholder,
+.form__input-children::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.form__sing-in-date::-moz-placeholder,
+.form__sing-out-date::-moz-placeholder,
+.form__input-adult::-moz-placeholder,
+.form__input-children::-moz-placeholder {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
 .form__sing-in-date::placeholder,
 .form__sing-out-date::placeholder,
 .form__input-adult::placeholder,
@@ -607,12 +641,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  padding-bottom: 28px;
+  padding-top: 3px;
+  padding-bottom: 25px;
 }
 
 .input__elders-juniors {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 3px;
   margin-bottom: -2px;
 }
 
@@ -643,8 +679,8 @@ body {
   background: none;
   position: absolute;
   top: 50%;
-  right: 10px;
-  margin-top: -13px;
+  right: 16px;
+  margin-top: -15px;
   width: 21px;
   height: 23px;
   border: none;
@@ -1073,7 +1109,7 @@ body {
 
 /*_____HOTELS_____*/
 .choice {
-  background-image: url("../img/hotels__background.png");
+  background-image: url("../img/hotels__background.jpg");
   background-color: var(--basic-more-darker-blue);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1131,7 +1167,7 @@ fieldset.choice__first {
 }
 
 fieldset.choice__second {
-  margin-left: -222px;
+  margin-right: 222px;
 }
 
 .choice__third {
@@ -1337,7 +1373,7 @@ fieldset.choice__second {
   justify-content: space-between;
 }
 
-li:first-child.sorting__list-item {
+.sorting__list-item:first-child {
   margin-right: 38px;
 }
 
@@ -1345,7 +1381,7 @@ li:first-child.sorting__list-item {
   margin-right: 34px;
 }
 
-li:nth-child(4).sorting__list-item {
+.sorting__list-item:nth-child(4) {
   flex-grow: 1;
 }
 
@@ -1566,12 +1602,10 @@ li:first-child.sorting__sublist-item {
 .buildings__links-details {
   margin-right: 6px;
   width: 110px;
-  height: 27px;
 }
 
 .buildings__links-book {
   width: 142px;
-  height: 27px;
 }
 
 span.details,
@@ -1602,7 +1636,7 @@ span.book {
   background-color: var(--basic-more-darker-blue);
 }
 
-.buildings__links-details a span:active {
+.book__span:active {
   opacity: 0.3;
 }
 
@@ -1625,9 +1659,6 @@ span.book {
   background-color: var(--basic-more-darker-brown);
 }
 
-.buildings__links-book a span:active {
-  opacity: 0.3;
-}
 
 .stars__rating {
   font-size: 14px;
